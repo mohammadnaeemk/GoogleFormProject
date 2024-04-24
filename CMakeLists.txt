@@ -3,4 +3,7 @@ project(GoogleFormProject)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(GoogleFormProject main.cpp)
+add_executable(GoogleFormProject main.cpp
+        Master.cpp
+        Student.h
+        Student.cpp)

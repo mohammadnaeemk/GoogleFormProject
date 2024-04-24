@@ -1,10 +1,11 @@
 // Master.cpp file
 #include "Master.h"
-Master::Master()
-{
-    // do something
-}
-int Master::getValue()
-{
-    return getValue();
-}
+#include <iostream>
+
+using namespace std;
+
+ Master::Master(){}
+int name;
+
+
+

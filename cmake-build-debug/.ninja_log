@@ -1,7 +1,13 @@
 # ninja log v5
-1	754	7356507811423218	CMakeFiles/GoogleFormProject.dir/main.cpp.obj	5f1150f8d3b5ff49
-755	1071	7356507814573938	GoogleFormProject.exe	a7007c4d9edffcec
-3	415	7356508409812844	CMakeFiles/GoogleFormProject.dir/main.cpp.obj	5f1150f8d3b5ff49
-415	488	7356508410523013	GoogleFormProject.exe	a7007c4d9edffcec
-3	456	7356515823683932	CMakeFiles/GoogleFormProject.dir/main.cpp.obj	5f1150f8d3b5ff49
-457	701	7356515826092997	GoogleFormProject.exe	a7007c4d9edffcec
+4	414	7356609016937608	CMakeFiles/GoogleFormProject.dir/main.cpp.obj	5f1150f8d3b5ff49
+1	92	7356608636479634	CMakeFiles/GoogleFormProject.dir/Master.cpp.obj	b57e0c4715b92e59
+414	487	7356609017637790	GoogleFormProject.exe	a66b6002dea06380
+6	491	7356637163095720	CMakeFiles/GoogleFormProject.dir/main.cpp.obj	5f1150f8d3b5ff49
+9	356	7356646313497612	CMakeFiles/GoogleFormProject.dir/Master.cpp.obj	b57e0c4715b92e59
+6	416	7356646314097816	CMakeFiles/GoogleFormProject.dir/main.cpp.obj	5f1150f8d3b5ff49
+2	361	7356647186128855	CMakeFiles/GoogleFormProject.dir/Student.cpp.obj	e95c558eec8163dc
+361	447	7356647186959144	GoogleFormProject.exe	e3eda9a9c858d2d5
+2	395	7356647797314203	CMakeFiles/GoogleFormProject.dir/main.cpp.obj	5f1150f8d3b5ff49
+396	471	7356647798034379	GoogleFormProject.exe	e3eda9a9c858d2d5
+3	419	7356648114843621	CMakeFiles/GoogleFormProject.dir/main.cpp.obj	5f1150f8d3b5ff49
+420	493	7356648115552681	GoogleFormProject.exe	e3eda9a9c858d2d5

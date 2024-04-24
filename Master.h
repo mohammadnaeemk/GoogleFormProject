@@ -1,11 +1,14 @@
 // Master.h file
-#ifndef NODE_H
-#define NODE_H
+#ifndef MASTER_H_INCLUDED
+#define MASTER_H_INCLUDED
+
 class Master
 {
+
 private:
-    // variable and function declaration
+
 public:
+
     // variable and function declaration
     Master();
     int getValue();
