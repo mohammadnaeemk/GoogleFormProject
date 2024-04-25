@@ -11,6 +11,6 @@ public:
 
     // variable and function declaration
     Master();
-    int getValue();
+
 };
 #endif

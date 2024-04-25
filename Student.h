@@ -6,8 +6,8 @@ class Student
 private:
 
 public:
-    // variable and function declaration
+
     Student();
-    int getValue();
+
 };
 #endif

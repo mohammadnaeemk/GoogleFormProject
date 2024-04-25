@@ -4,7 +4,7 @@
 
 using namespace std;
 
-ExamWritten::ExamWritten(){}
+ExamWritten::ExamWritten(string examname, int numberquestins, int timnum) : Exam(examname, numberquestins, timnum) {}
 int name;
 
 

@@ -10,7 +10,7 @@ private:
 public:
 
     // variable and function declaration
-    ExamWritten();
-    int getValue();
+    ExamWritten(string , int , int );
+
 };
 #endif
