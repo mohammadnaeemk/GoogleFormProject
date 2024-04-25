@@ -6,4 +6,10 @@ set(CMAKE_CXX_STANDARD 17)
 add_executable(GoogleFormProject main.cpp
         Master.cpp
         Student.h
-        Student.cpp)
+        Student.cpp
+        ExamWritten.h
+        Exam.h
+        ExamTest.h
+        ExamWritten.cpp
+        ExamTest.cpp
+        Exam.cpp)

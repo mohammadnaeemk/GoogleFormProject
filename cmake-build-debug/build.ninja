@@ -67,6 +67,24 @@ build CMakeFiles/GoogleFormProject.dir/Student.cpp.obj: CXX_COMPILER__GoogleForm
   OBJECT_DIR = CMakeFiles\GoogleFormProject.dir
   OBJECT_FILE_DIR = CMakeFiles\GoogleFormProject.dir
 
+build CMakeFiles/GoogleFormProject.dir/ExamWritten.cpp.obj: CXX_COMPILER__GoogleFormProject_unscanned_Debug D$:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/GoogleFormProject/ExamWritten.cpp || cmake_object_order_depends_target_GoogleFormProject
+  DEP_FILE = CMakeFiles\GoogleFormProject.dir\ExamWritten.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\GoogleFormProject.dir
+  OBJECT_FILE_DIR = CMakeFiles\GoogleFormProject.dir
+
+build CMakeFiles/GoogleFormProject.dir/ExamTest.cpp.obj: CXX_COMPILER__GoogleFormProject_unscanned_Debug D$:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/GoogleFormProject/ExamTest.cpp || cmake_object_order_depends_target_GoogleFormProject
+  DEP_FILE = CMakeFiles\GoogleFormProject.dir\ExamTest.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\GoogleFormProject.dir
+  OBJECT_FILE_DIR = CMakeFiles\GoogleFormProject.dir
+
+build CMakeFiles/GoogleFormProject.dir/Exam.cpp.obj: CXX_COMPILER__GoogleFormProject_unscanned_Debug D$:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/GoogleFormProject/Exam.cpp || cmake_object_order_depends_target_GoogleFormProject
+  DEP_FILE = CMakeFiles\GoogleFormProject.dir\Exam.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\GoogleFormProject.dir
+  OBJECT_FILE_DIR = CMakeFiles\GoogleFormProject.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target GoogleFormProject
@@ -75,7 +93,7 @@ build CMakeFiles/GoogleFormProject.dir/Student.cpp.obj: CXX_COMPILER__GoogleForm
 #############################################
 # Link the executable GoogleFormProject.exe
 
-build GoogleFormProject.exe: CXX_EXECUTABLE_LINKER__GoogleFormProject_Debug CMakeFiles/GoogleFormProject.dir/main.cpp.obj CMakeFiles/GoogleFormProject.dir/Master.cpp.obj CMakeFiles/GoogleFormProject.dir/Student.cpp.obj
+build GoogleFormProject.exe: CXX_EXECUTABLE_LINKER__GoogleFormProject_Debug CMakeFiles/GoogleFormProject.dir/main.cpp.obj CMakeFiles/GoogleFormProject.dir/Master.cpp.obj CMakeFiles/GoogleFormProject.dir/Student.cpp.obj CMakeFiles/GoogleFormProject.dir/ExamWritten.cpp.obj CMakeFiles/GoogleFormProject.dir/ExamTest.cpp.obj CMakeFiles/GoogleFormProject.dir/Exam.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\GoogleFormProject.dir
