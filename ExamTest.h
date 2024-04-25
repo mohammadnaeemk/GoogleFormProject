@@ -1,8 +1,8 @@
 // ExamTest.h file
-#ifndef EXAMTEST_H_INCLUDED
-#define EXAMTEST_H_INCLUDED
-
-class ExamTest
+#ifndef EXAMTEST_H
+#define EXAMTEST_H
+#include "Exam.h"
+class ExamTest : public Exam
 {
 
 private:

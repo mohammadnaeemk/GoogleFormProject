@@ -1,6 +1,6 @@
 // Master.h file
-#ifndef MASTER_H_INCLUDED
-#define MASTER_H_INCLUDED
+#ifndef MASTER_H
+#define MASTER_H
 
 class Master
 {
