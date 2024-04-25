@@ -9,7 +9,7 @@
 					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
 					"minimumCMakeVersion" : 
 					{
-						"string" : "3.27"
+						"string" : "3.26"
 					},
 					"projectIndex" : 0,
 					"source" : ".",
@@ -49,12 +49,12 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/GoogleFormProject/cmake-build-debug",
-		"source" : "D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/GoogleFormProject"
+		"build" : "C:/Users/ASUS/Desktop/project2/GoogleFormProject/cmake-build-debug",
+		"source" : "C:/Users/ASUS/Desktop/project2/GoogleFormProject"
 	},
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 6
+		"minor" : 5
 	}
 }
