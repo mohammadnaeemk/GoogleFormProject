@@ -15,7 +15,7 @@ public:
 
 
     // constructor
-    Exam(string,int ,int);
+    Exam(string,int ,int ,int);
 
 };
 #endif

@@ -4,8 +4,8 @@
 
 using namespace std;
 
-ExamWritten::ExamWritten(string examname, int numberquestins, int timnum) : Exam(examname, numberquestins, timnum) {}
-int name;
+ExamWritten::ExamWritten(string examname, int totalScore, int numberquestins, int timenum) : Exam(examname,totalScore, numberquestins, timenum) {}
+
 
 
 

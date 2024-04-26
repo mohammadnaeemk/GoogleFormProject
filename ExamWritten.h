@@ -12,5 +12,6 @@ public:
     // variable and function declaration
     ExamWritten(string , int , int );
 
+    ExamWritten(string examname, int totalScore, int numberquestins, int timenum);
 };
 #endif

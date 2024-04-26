@@ -9,7 +9,7 @@ int numberOfQuestions;
 int score;
 
 //constructor
-Exam::Exam(string name,int numberQ,int timeNumber)
+Exam::Exam(string name,int totalScore,int numberQ,int timeNumber)
 {
     exameName=name;
     numberOfQuestions=numberQ;

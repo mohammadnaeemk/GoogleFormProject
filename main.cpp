@@ -4,6 +4,9 @@
 #include <fstream>
 #include "Master.h"
 #include "Student.h"
+#include "Exam.h"
+#include "ExamWritten.h"
+#include "ExamTest.h"
 
 using namespace std;
 
@@ -57,6 +60,74 @@ int main() {
                 while (getline(masterfile, line)) { //search for master
                     if (line == input) {
                         cout << "You have successfully logged in as master\n";
+                        //----------------------------------MASTER MENU (start)---------------------------------------
+                        bool masterFlag= true;
+                        while (masterFlag)
+                        {
+                            int ans;
+                            cout << "Choose your desired option from the menu below...\n"
+                                    "0. Back to menu.\n "
+                                    "1. Add a list of students.\n "
+                                    "2. Making a test exam.\n "
+                                    "3. Making a descriptive exam.\n"
+                                    "4. View student lists and add students.\n"
+                                    "5. History of exams.\n"
+                                    "6. Add list to exams.\n"
+                                    "7. Result of exams.\n"
+                                    "8. Correcting exams.\n";
+                             cin>>ans;
+
+                            int qnumber,qtime,scor;
+                            string name;
+                            if (ans==0)//Exit
+                            {
+                                break;
+                            }
+                            else if (ans==1)//Add a list of students
+                            {
+
+                            }
+                            else if (ans==2)//Making a test exam
+                            {
+
+                            }
+                            else if (ans==3)//Making a descriptive exam
+                            {
+                                cout<<"Please enter your exam name : \n";
+                                getline(cin>>ws,name);
+                                cout<<"Please enter the number of questions in your exams: \n";
+                                cin>>qnumber;
+                                cout<<"Please enter the total exam score: \n";
+                                cin>>scor;
+                                cout<<"Please enter the exam time: \n";
+                                cin>>qtime;
+                                ExamWritten quiz(name,scor,qnumber,qtime);
+
+
+                            }
+                            else if (ans==4)//View student lists and add students
+                            {
+
+                            }
+                            else if (ans==5)//History of exams
+                            {
+
+                            }
+                            else if (ans==6)//Add list to exams
+                            {
+
+                            }
+                            else if (ans==7)//Result of exams
+                            {
+
+                            }
+                            else if (ans==8)//Correcting exams
+                            {
+
+                            }
+
+                        }
+                        //----------------------------------MASTER MENU (end)---------------------------------------
                     } else {
                         cout << "Invalid username or password!\n\n";
                         continue; //goes to menu page
