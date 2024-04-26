@@ -69,7 +69,7 @@ int main() {
                                     " 0. Back to menu.\n "
                                     "1. Add a list of students.\n "
                                     "2. Making a test exam.\n "
-                                    "3. Making a descriptive exam.\n"
+                                    "3. Making a written exam.\n"
                                     " 4. View student lists and add students.\n"
                                     " 5. History of exams.\n"
                                     " 6. Add list to exams.\n"
@@ -77,9 +77,9 @@ int main() {
                                     " 8. Correcting exams.\n";
                              cin>>ans;
 
-                            int qnumber,qtime,scor;
+                            int qnumber,qtime,score;
                             string name;
-                            if (ans==0)//Exit
+                            if (ans==0)//Back to menu
                             {
                                 break;
                             }
@@ -89,7 +89,23 @@ int main() {
                             }
                             else if (ans==2)//Making a test exam
                             {
-
+                                cout<<"Please enter your exam name : \n";
+                                getline(cin>>ws,name);
+                                cout<<"Please enter the number of questions in your exams: \n";
+                                cin>>qnumber;
+                                cout<<"Please enter the total exam score: \n";
+                                cin >> score;
+                                cout<<"Please enter the exam time: \n";
+                                cin>>qtime;
+                                ExamTest quiz(name, score, qnumber, qtime);
+                                if (quiz.ExamTestCreator())
+                                {
+                                    cout<<"Your test was created successfully. \n";
+                                }
+                                else
+                                {
+                                    cout<<"It seems that the process of making the exam had a problem!";
+                                }
                             }
                             else if (ans==3)//Making a descriptive exam
                             {
@@ -98,17 +114,17 @@ int main() {
                                 cout<<"Please enter the number of questions in your exams: \n";
                                 cin>>qnumber;
                                 cout<<"Please enter the total exam score: \n";
-                                cin>>scor;
+                                cin >> score;
                                 cout<<"Please enter the exam time: \n";
                                 cin>>qtime;
-                                ExamWritten quiz(name,scor,qnumber,qtime);
+                                ExamWritten quiz(name, score, qnumber, qtime);
                                 if (quiz.ExamWrittenCreator())
                                 {
                                     cout<<"Your test was created successfully. \n";
                                 }
                                 else
                                 {
-                                    cout<<"It seems that there is a problem. The process of making the exam had a problem!";
+                                    cout<<"It seems that the process of making the exam had a problem!";
                                 }
 
                             }

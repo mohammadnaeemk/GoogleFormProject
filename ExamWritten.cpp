@@ -13,25 +13,17 @@ ExamWritten::ExamWritten(string examname, int totalScore, int numberquestins, in
 bool ExamWritten::ExamWrittenCreator()
 {
     fstream ExamFile;
-     string fileName="";
+    string fileName="";
 
     fileName=examName;
-    fileName +=".txt";
-
-    fstream test;
-    test.open("ExamsList.txt",ios::app);
-    test<<fileName<<endl;
-
-    ExamFile.open(fileName, ios::out);//read from student file
+    fileName = "ExamList/"+ fileName + ".txt";
+    ExamFile.open(fileName, ios::out);//creat written exam file
     ExamFile.close();
     fstream ExamFileEdit;
     ExamFileEdit.open(fileName,ios::app);
-    ExamFileEdit<<numberOfQuestions;
-    ExamFileEdit<<"\n";
-    ExamFileEdit<<timeM;
-    ExamFileEdit<<"\n";
-    ExamFileEdit<<score;
-    ExamFileEdit<<"\n";
+    ExamFileEdit<<numberOfQuestions << endl;
+    ExamFileEdit<<timeM << endl;
+    ExamFileEdit<<score << endl;
 
     for (int i = 1; i <= numberOfQuestions ; ++i) {
         string text=to_string(i),temp="";
@@ -43,6 +35,11 @@ bool ExamWritten::ExamWrittenCreator()
         ExamFileEdit<<text;
     }
     ExamFileEdit.close();
+
+    fstream Examname; //adding exam name to ExamsList.txt
+    Examname.open("ExamsList.txt", ios::app);
+    Examname << examName << endl;
+    Examname.close();
 
     return true;
 }
