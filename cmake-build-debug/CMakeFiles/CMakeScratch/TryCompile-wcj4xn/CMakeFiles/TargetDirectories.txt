@@ -1,0 +1,3 @@
+D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/GoogleFormProject/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-wcj4xn/CMakeFiles/cmTC_49928.dir
+D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/GoogleFormProject/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-wcj4xn/CMakeFiles/edit_cache.dir
+D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/GoogleFormProject/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-wcj4xn/CMakeFiles/rebuild_cache.dir
