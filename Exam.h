@@ -6,10 +6,13 @@
 using namespace std;
 class Exam
 {
-
-private:
-
+protected:
+    int timeM;
+    int numberOfQuestions;
+    int score;
+    string examName;
 public:
+
     //تابع زیر تنظیم کننده نمره است
     void SetScore(float);
 

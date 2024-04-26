@@ -66,15 +66,15 @@ int main() {
                         {
                             int ans;
                             cout << "Choose your desired option from the menu below...\n"
-                                    "0. Back to menu.\n "
+                                    " 0. Back to menu.\n "
                                     "1. Add a list of students.\n "
                                     "2. Making a test exam.\n "
                                     "3. Making a descriptive exam.\n"
-                                    "4. View student lists and add students.\n"
-                                    "5. History of exams.\n"
-                                    "6. Add list to exams.\n"
-                                    "7. Result of exams.\n"
-                                    "8. Correcting exams.\n";
+                                    " 4. View student lists and add students.\n"
+                                    " 5. History of exams.\n"
+                                    " 6. Add list to exams.\n"
+                                    " 7. Result of exams.\n"
+                                    " 8. Correcting exams.\n";
                              cin>>ans;
 
                             int qnumber,qtime,scor;
@@ -102,7 +102,14 @@ int main() {
                                 cout<<"Please enter the exam time: \n";
                                 cin>>qtime;
                                 ExamWritten quiz(name,scor,qnumber,qtime);
-
+                                if (quiz.ExamWrittenCreator())
+                                {
+                                    cout<<"Your test was created successfully. \n";
+                                }
+                                else
+                                {
+                                    cout<<"It seems that there is a problem. The process of making the exam had a problem!";
+                                }
 
                             }
                             else if (ans==4)//View student lists and add students

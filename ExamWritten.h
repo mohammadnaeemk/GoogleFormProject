@@ -6,12 +6,11 @@ class ExamWritten : public Exam
 {
 
 private:
-
 public:
-
-    // variable and function declaration
-    ExamWritten(string , int , int );
-
+    //constructor
     ExamWritten(string examname, int totalScore, int numberquestins, int timenum);
+
+//for build Exam Written
+    bool ExamWrittenCreator();
 };
 #endif

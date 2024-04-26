@@ -153,4 +153,7 @@ CMakeFiles/GoogleFormProject.dir/main.cpp.obj: \
  D:/Apps/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++io.h \
  D:/Apps/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/fstream.tcc \
  D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\GoogleFormProject\Master.h \
- D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\GoogleFormProject\Student.h
+ D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\GoogleFormProject\Student.h \
+ D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\GoogleFormProject\Exam.h \
+ D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\GoogleFormProject\ExamWritten.h \
+ D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\GoogleFormProject\ExamTest.h

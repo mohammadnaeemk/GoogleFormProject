@@ -3,15 +3,12 @@
 #include <iostream>
 #include <string>
 using namespace std;
-string exameName;
-int timeM;
-int numberOfQuestions;
-int score;
 
 //constructor
 Exam::Exam(string name,int totalScore,int numberQ,int timeNumber)
 {
-    exameName=name;
+    score = totalScore;
+    examName=name;
     numberOfQuestions=numberQ;
     timeM=timeNumber;
 }
