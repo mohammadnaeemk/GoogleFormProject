@@ -18,7 +18,6 @@ bool ExamWritten::ExamWrittenCreator()
     fileName=examName;
     fileName +=".txt";
     ExamFile.open(fileName, ios::out);//read from student file
-    fileName = "Exams/" + fileName;
     ExamFile.close();
     fstream ExamFileEdit;
     ExamFileEdit.open(fileName,ios::app);
