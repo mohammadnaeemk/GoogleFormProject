@@ -1,0 +1,3 @@
+"D:\Apps\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -E rm -f CMakeFiles\GoogleFormProject.dir/objects.a
+"D:\Apps\CLion 2023.3.4\bin\mingw\bin\ar.exe" qc CMakeFiles\GoogleFormProject.dir/objects.a @CMakeFiles\GoogleFormProject.dir\objects1.rsp
+"D:\Apps\CLion 2023.3.4\bin\mingw\bin\g++.exe" -g -Wl,--whole-archive CMakeFiles\GoogleFormProject.dir/objects.a -Wl,--no-whole-archive -o GoogleFormProject.exe -Wl,--out-implib,libGoogleFormProject.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\GoogleFormProject.dir\linkLibs.rsp
