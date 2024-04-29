@@ -194,6 +194,7 @@ int main() {
             }
         }
         if (op == 0) {
+           cout << "\nThanks for your cooperation (:\n";
            flag= false;
         }
     }

@@ -49,12 +49,12 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/ASUS/Desktop/GoogleFormProject/cmake-build-debug",
-		"source" : "C:/Users/ASUS/Desktop/GoogleFormProject"
+		"build" : "C:/Users/ctuar/Desktop/project/GoogleFormProject/cmake-build-debug",
+		"source" : "C:/Users/ctuar/Desktop/project/GoogleFormProject"
 	},
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 5
+		"minor" : 6
 	}
 }
