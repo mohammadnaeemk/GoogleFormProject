@@ -130,7 +130,44 @@ int main() {
                             }
                             else if (ans==4)//View student lists and add students
                             {
+                                while (true) {
+                                    int innerAns = 0;
+                                    cout << " 1. See all students.\n 2. Add a new student.\n 0. Back. \n";
+                                    cin >> innerAns;
+                                    if (innerAns == 1)//See all students
+                                    {
+                                        cout << "The list of all students is equal to:\n ";
+                                        string innerLine= "";
+                                        fstream studentcrfile;
+                                        studentcrfile.open("StudentsDB.txt", ios::in); //print students
+                                        if (studentcrfile.is_open()) {
+                                            int * counter = new int(1) ;
+                                            while (getline(studentcrfile,innerLine)){
 
+                                               cout << *counter << "_ " << innerLine << endl;
+                                               ++ *counter;
+                                            }
+                                            studentcrfile.close();
+                                            cout<<"All students successfully performed.";
+
+                                        }
+                                    }
+                                    else if (innerAns == 2)//Add a new student
+                                    {
+                                        cout << "Please enter the student's username and password: ";
+                                        string innerInput = "";
+                                        getline(cin >> ws, input);
+                                        fstream studentcrfile;
+                                        studentcrfile.open("StudentsDB.txt", ios::app); //append to student file
+                                        if (studentcrfile.is_open()) {
+                                            studentcrfile << endl << input;
+                                            cout << "\nStudent account was created successfully.\n";
+                                            studentcrfile.close();
+                                        }
+                                    } else if (innerAns == 0) {
+                                        break;
+                                    }
+                                }
                             }
                             else if (ans==5)//History of exams
                             {
