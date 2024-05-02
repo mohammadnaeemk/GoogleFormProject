@@ -49,7 +49,7 @@ bool ExamTest::ExamTestCreator() {
     ExamFileEdit.close();
 
     fstream Examname; //adding exam name to ExamsList.txt
-    Examname.open("ExamsList.txt", ios::app);
+    Examname.open("ExamsName.txt", ios::app);
     examName += "Test";
     Examname << examName << endl;
     Examname.close();

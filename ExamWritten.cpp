@@ -37,7 +37,7 @@ bool ExamWritten::ExamWrittenCreator()
     ExamFileEdit.close();
 
     fstream Examname; //adding exam name to ExamsList.txt
-    Examname.open("ExamsList.txt", ios::app);
+    Examname.open("ExamsName.txt", ios::app);
     Examname << examName << endl;
     Examname.close();
 
