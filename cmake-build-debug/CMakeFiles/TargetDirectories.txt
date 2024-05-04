@@ -1,3 +1,3 @@
-C:/Users/ASUS/Desktop/project/GoogleFormProject/cmake-build-debug/CMakeFiles/GoogleFormProject.dir
-C:/Users/ASUS/Desktop/project/GoogleFormProject/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/ASUS/Desktop/project/GoogleFormProject/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.2/GoogleFormProject/cmake-build-debug/CMakeFiles/GoogleFormProject.dir
+D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.2/GoogleFormProject/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.2/GoogleFormProject/cmake-build-debug/CMakeFiles/rebuild_cache.dir

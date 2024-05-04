@@ -133,7 +133,7 @@ int main() {
                             {
                                 while (true) {
                                     int innerAns = 0;
-                                    cout << " 0.Back  1.See all students  2.Add a new student\n ";
+                                    cout << " 0.Back \n 1.See all students \n 2.Add a new student\n ";
                                     cin >> innerAns;
                                     if (innerAns == 0) {//Back
                                         break;
@@ -160,6 +160,8 @@ int main() {
                                         cout << "Please enter the student's username and password: ";
                                         string innerInput = "";
                                         getline(cin >> ws, input);
+
+                                        if (! Master::UserNameChecker("MastersDB.txt",input)) {
                                         fstream studentcrfile;
                                         studentcrfile.open("StudentsDB.txt", ios::app); //append to student file
                                         if (studentcrfile.is_open()) {
@@ -167,8 +169,16 @@ int main() {
                                             cout << "\nThe student account has been created successfully.\n";
                                             studentcrfile.close();
                                         }
-                                    }else{
-                                        cout << "Unknown request!\n";
+                                          else{
+                                            cout << "Unknown request!\n";
+                                          }
+                                        }
+                                        else
+                                        {
+                                            cout<<"Username is already selected!"<<endl;
+                                            continue;
+                                        }
+
                                     }
                                 }
                             }
@@ -272,25 +282,40 @@ int main() {
                 cout << "Please enter a username and a password:";
                 string input = "";
                 getline(cin >> ws, input);
-                fstream mastercrfile;
-                mastercrfile.open("MastersDB.txt", ios::app); //append to master file
-                if (mastercrfile.is_open()) {
-                    mastercrfile << endl << input;
-                    cout << "\nYou have successfully created an account.\n";
-                    mastercrfile.close();
+
+                if (! Master::UserNameChecker("MastersDB.txt",input)) {
+                    fstream mastercrfile;
+                    mastercrfile.open("MastersDB.txt", ios::app); //append to master file
+                    if (mastercrfile.is_open()) {
+                        mastercrfile << endl << input;
+                        cout << "\nYou have successfully created an account.\n";
+                        mastercrfile.close();
+                    }
+                }
+                else
+                {
+                    cout<<"Username is already selected!"<<endl;
+                    continue;
                 }
             } else if (op2 == "student") {
                 cout << "Please enter a username and a password: ";
                 string input = "";
                 getline(cin >> ws, input);
-                fstream studentcrfile;
-                studentcrfile.open("StudentsDB.txt", ios::app); //append to student file
-                if (studentcrfile.is_open()) {
-                    studentcrfile << endl << input;
-                    cout << "\nYou have successfully created an account.\nlogging in...\n";
-                    studentcrfile.close();
+
+                if (!Master::UserNameChecker("StudentsDB.txt", input)) {
+                    fstream studentcrfile;
+                    studentcrfile.open("StudentsDB.txt", ios::app); //append to student file
+                    if (studentcrfile.is_open()) {
+                        studentcrfile << endl << input;
+                        cout << "\nYou have successfully created an account.\n";
+                        studentcrfile.close();
+                    }
                 }
-                cout << "You have successfully logged in as student\n";
+                else
+                {
+                    cout<<"Username is already selected!"<<endl;
+                    continue;
+                }
             }
             else if (op2 =="0")
             {

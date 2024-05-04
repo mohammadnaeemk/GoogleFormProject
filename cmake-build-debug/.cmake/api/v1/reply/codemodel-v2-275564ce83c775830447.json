@@ -49,12 +49,12 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/ASUS/Desktop/project/GoogleFormProject/cmake-build-debug",
-		"source" : "C:/Users/ASUS/Desktop/project/GoogleFormProject"
+		"build" : "D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.2/GoogleFormProject/cmake-build-debug",
+		"source" : "D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.2/GoogleFormProject"
 	},
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 5
+		"minor" : 6
 	}
 }
