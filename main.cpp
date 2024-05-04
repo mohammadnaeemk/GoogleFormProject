@@ -86,7 +86,12 @@ int main() {
                             }
                             else if (ans==1)//Add a list of students
                             {
+                                string userSTR="";
+                             cout<<"Please enter your students list : \n";
+                                getline(cin>>ws,userSTR);
 
+                                    Master::ListMaker(userSTR) == true;
+                                    cout<<"Your list has been successfully created.\n";
                             }
                             else if (ans == 2)//Making a test exam
                             {
@@ -161,7 +166,7 @@ int main() {
                                         string innerInput = "";
                                         getline(cin >> ws, input);
 
-                                        if (! Master::UserNameChecker("MastersDB.txt",input)) {
+                                        if (! Master::UserNameChecker("MastersDB.txt",input, true)) {
                                         fstream studentcrfile;
                                         studentcrfile.open("StudentsDB.txt", ios::app); //append to student file
                                         if (studentcrfile.is_open()) {
@@ -283,7 +288,7 @@ int main() {
                 string input = "";
                 getline(cin >> ws, input);
 
-                if (! Master::UserNameChecker("MastersDB.txt",input)) {
+                if (! Master::UserNameChecker("MastersDB.txt",input, true)) {
                     fstream mastercrfile;
                     mastercrfile.open("MastersDB.txt", ios::app); //append to master file
                     if (mastercrfile.is_open()) {
@@ -302,7 +307,7 @@ int main() {
                 string input = "";
                 getline(cin >> ws, input);
 
-                if (!Master::UserNameChecker("StudentsDB.txt", input)) {
+                if (!Master::UserNameChecker("StudentsDB.txt", input, true)) {
                     fstream studentcrfile;
                     studentcrfile.open("StudentsDB.txt", ios::app); //append to student file
                     if (studentcrfile.is_open()) {

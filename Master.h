@@ -13,7 +13,8 @@ public:
 
     // variable and function declaration
     Master();
-bool ListMaker(string);
-static bool UserNameChecker(string,string);
+    static bool ListMaker(string);
+    static bool UserNameChecker(string,string,bool);
+    static string StudentReturner(string);
 };
 #endif
