@@ -78,35 +78,33 @@ int masterPassword;
 
 
 //Student list maker
-bool Master::ListMaker(string listName)
+void Master::ListMaker(string listName)
 {
     string userName;
-
     bool functionFlag= true;
+
         while (true)
         {
+            cout<<"--------------------------------------------------------------------------------\n";
             cout<<"Please enter the usernames of the students you want to add(Enter 'exit' to exit) :  \n";
-            cin>>userName;
+            getline(cin>>ws,userName);
             if (userName != "exit") {
                 if (Master::UserNameChecker("StudentsDB.txt", userName, false)) {
                     fstream list;
                     list.open("StudentLists/"+listName+".txt",ios::app);
                     if (list.is_open()){
                         list<<StudentReturner(userName)<<endl;
+                        list.close();
+                        cout<<"The student was added to the list.\n";
                     }
-                    list.close();
-                    functionFlag = true;
-                } else {
+                }
+                else
+                {
                     cout << "Your desired student was not found!\n";
-                    functionFlag = false;
                 }
             }
-            else
-            {
-                break;
-            }
+            else{break;}
         }
-    return functionFlag;
 }
 
 
