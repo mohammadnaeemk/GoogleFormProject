@@ -13,8 +13,8 @@ int masterPassword;
 
 
 // Checking the username to avoid duplicates.
- bool Master::UserNameChecker(string adress, string input,bool FLAG) {
-    string strCheck1="",strCheck2="",line;
+ bool Master::UserNameChecker(string adress, string input, bool FLAG) {
+    string strCheck1 = "", strCheck2 = "", line;
     bool F = false;
     if (FLAG == true) {
         for (int i = input.size() - 1; i >= 0; --i) {
@@ -41,7 +41,6 @@ int masterPassword;
                     F= true;
                     break;
                 }
-
             }
         }
       }
@@ -81,7 +80,7 @@ int masterPassword;
 void Master::ListMaker(string listName)
 {
     string userName;
-    bool functionFlag= true;
+    bool functionFlag = true;
 
         while (true)
         {
@@ -91,19 +90,22 @@ void Master::ListMaker(string listName)
             if (userName != "exit") {
                 if (Master::UserNameChecker("StudentsDB.txt", userName, false)) {
                     fstream list;
-                    list.open("StudentLists/"+listName+".txt",ios::app);
+                    list.open("StudentLists/" + listName + ".txt",ios::app);
                     if (list.is_open()){
-                        list<<StudentReturner(userName)<<endl;
+                        list << StudentReturner(userName) << endl;
                         list.close();
                         cout<<"The student was added to the list.\n";
                     }
                 }
                 else
                 {
-                    cout << "Your desired student was not found!\n";
+                    cout << "Your chosen student has not found!\n";
                 }
             }
-            else{break;}
+            else
+            {
+                break;
+            }
         }
 }
 

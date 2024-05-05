@@ -180,7 +180,7 @@ int main() {
                         {
                             while (true) {
                                 int innerans = 0;
-                                cout << "0.Back  1.Exams list  2.Done exams list\n";
+                                cout << "0.Back  1.Exams list  2.Done exams list  3.View full exam\n";
                                 cin >> innerans;
                                 if (innerans == 0) {//Back
                                     break;
@@ -216,7 +216,7 @@ int main() {
                                         bool flag = true;
                                         while (getline(doneexamlist, innerLine)) {
                                             if (innerLine != "") {
-                                                cout << counter << "_" << innerLine << endl;
+                                                cout << counter << "-" << innerLine << endl;
                                                 counter++;
                                                 flag = false;
                                             }
@@ -229,7 +229,43 @@ int main() {
                                         doneexamlist.close();
                                     }
 
-                                } else {
+                                }else if(innerans == 3) {
+                                    cout << "Enter your exam name(if it's the test exam then please add 'Test' to the end of your exam's name):\n";
+                                    string input = "";
+                                    bool flag = true;
+                                    string temp = "";
+
+                                    getline(cin >> ws, input);
+                                    string line = "";
+                                    fstream examnamefile;
+                                    examnamefile.open("ExamsName.txt", ios :: in);
+                                    if(examnamefile.is_open()){
+                                        while(getline(examnamefile, line)){
+                                            if(line == input){
+                                                temp = line;
+                                                flag = false;
+                                                break;
+                                            }
+                                        }
+                                    }
+                                    examnamefile.close();
+                                    if(!flag){
+                                        fstream exam;
+                                        string examname = "ExamList/" + temp + ".txt";
+                                        exam.open(examname, ios :: in);
+                                        string templine = "";
+                                        if(exam.is_open()){
+                                            while(getline(exam, templine)){
+                                                cout << templine << endl;
+                                            }
+                                        }
+                                        exam.close();
+                                        cout << "Your exam has successfully printed!\n";
+
+                                    }else{
+                                        cout << "Your exam does not found\n";
+                                    }
+                                }else {
                                     cout << "Unknown request!\n";
                                 }
                             }
@@ -280,7 +316,7 @@ int main() {
                 }
                 else
                 {
-                    cout<<"Username is already selected!"<<endl;
+                    cout<<"Username is already exist!"<<endl;
                     continue;
                 }
             } else if (op2 == "student") {
@@ -299,7 +335,7 @@ int main() {
                 }
                 else
                 {
-                    cout<<"Username is already selected!"<<endl;
+                    cout << "Username is already exist!"<< endl;
                     continue;
                 }
             }

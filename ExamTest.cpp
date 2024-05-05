@@ -20,9 +20,9 @@ bool ExamTest::ExamTestCreator() {
     ExamFile.close();
     fstream ExamFileEdit;
     ExamFileEdit.open(fileName,ios::app);
-    ExamFileEdit<<numberOfQuestions << endl;
-    ExamFileEdit<<timeM << endl;
-    ExamFileEdit<<score << endl;
+    ExamFileEdit<< "Number of questions : " << numberOfQuestions << endl;
+    ExamFileEdit << "Time : " <<timeM << endl;
+    ExamFileEdit<< "Total score : " << score << endl;
 
     for (int i = 1; i <= numberOfQuestions ; ++i) {
         string text=to_string(i),temp="";
