@@ -301,8 +301,17 @@ int main() {
 
                                     StudentListName.open("StudentsListName.txt", ios::in);
                                     if (StudentListName.is_open()) {
-                                        while (getline(StudentListName, line)) {
-                                            if (line == strInput) {
+                                        bool F= false,IF= false;
+                                        while (getline(StudentListName, line))
+                                        {
+                                            if (line == strInput)
+                                            {
+                                                line = strInput;
+                                                F= true;
+                                                break;
+                                            }
+                                        }
+                                            if (F) {
                                                 string innerStrInput = "";
                                                 cout<< "Ok!\nEnter your exam name(if it's the test exam then please add 'Test' to the end of your exam's name): \n";
                                                 getline(cin >> ws, innerStrInput);
@@ -311,8 +320,17 @@ int main() {
 
                                                 if (ExamName.is_open()) {
                                                     string innerline = "";
-                                                    while (getline(ExamName, innerline)) {
-                                                        if (innerStrInput == innerline) {
+                                                    while (getline(ExamName, innerline))
+                                                    {
+                                                        if (innerStrInput == innerline)
+                                                        {
+                                                            innerStrInput = innerline;
+                                                            IF= true;
+                                                            break;
+                                                        }
+                                                    }
+
+                                                        if (IF) {
                                                             fstream StudentListExam;
                                                             string exam = "ExamList/" + innerStrInput + ".txt";
                                                             StudentListExam.open(exam, ios::app);
@@ -326,17 +344,16 @@ int main() {
                                                             break;
                                                         } else {
                                                             cout << "Your exam does not found!\n\n";
-                                                            break;
+                                                            
                                                         }
-                                                    }
+
                                                 }
                                                 ExamName.close();
-                                                break;
                                             } else {
                                                 cout << "Your student list name does not found!\n\n";
-                                                break;
+
                                             }
-                                        }
+
                                     }
                                     StudentListName.close();
                                 }else{
