@@ -340,8 +340,7 @@ int main() {
                                                                                 << strInput << endl;
                                                             }
                                                             StudentListExam.close();
-                                                            cout
-                                                                    << "Your students list has successfully added to your exam.\n\n";
+                                                            cout<< "Your students list has successfully added to your exam.\n\n";
                                                             break;
                                                         } else {
                                                             cout << "Your exam does not found!\n\n";
@@ -371,8 +370,8 @@ int main() {
                             while (true)
                             {
                                 cout << "Please select the name of the exam you want to correct from the list below and enter it.(enter 'exit' to back to the master menu):\n \n";
-                                string line = "",ans="";
-                                int *counter= new int(1);
+                                string line = "", ans = "";
+                                int *counter = new int(1);
                                 fstream DoneExamsFile1;
                                 DoneExamsFile1.open("DoneExamsName.txt",ios::in);
                                 while (getline(DoneExamsFile1,line)) {
@@ -399,7 +398,7 @@ int main() {
                                         string STR="",description="";
                                         int counter=1,score=0,number=0;
                                         cout<<"The questions are displayed in order. In the first line, enter the desired text and in the next line,\n";
-                                        cout<<" enter the score corresponding to the answer of the same question.\n \n";
+                                        cout<<" enter the score according to the right answer of the same question.\n \n";
                                         fstream NewFileInCorrected;
                                         fstream OldFileInDone;
                                         NewFileInCorrected.open("CorrectedExamList/"+ans+".txt",ios::out);
@@ -410,7 +409,6 @@ int main() {
                                             {
                                               NewFileInCorrected<<STR<<endl;
                                                 cout<<STR<<endl;
-
                                                 ++ counter;
                                             }
                                             else if (counter >= 4 && counter % 2 != 0)
@@ -419,9 +417,9 @@ int main() {
                                                 cout<<STR<<endl<<"Description : ";
                                                 getline(cin>>ws,description);
                                                 NewFileInCorrected<<"Master description : "<<description<<endl;
-                                                cout<< "number : ";
+                                                cout<< "Score : ";
                                                 cin>>number;
-                                                NewFileInCorrected<<"Master number : "<<number<<endl;
+                                                NewFileInCorrected<<"Master's score : "<<number<<endl;
                                                 score += number;
                                                 ++ counter;
                                             }
@@ -431,8 +429,8 @@ int main() {
                                                 continue;
                                             }
                                         }
-                                        NewFileInCorrected<<"total score is : "<<score;
-                                        //در این جا باید نام فایل امتحانات رو در لیست تکست های مشخص کردیم حذف و اضافه کنیم
+                                        NewFileInCorrected<<"Total score is : "<<score;
+                                        //در این جا باید نام فایل امتحانات رو در لیست تکست هایی که مشخص کردیم حذف و اضافه کنیم
                                         NewFileInCorrected.close();
                                         OldFileInDone.close();
 
@@ -459,11 +457,12 @@ int main() {
                                             }
                                         }
 
-                                         filename="DoneExamsName.txt";
+                                        filename="DoneExamsName.txt";
                                         temp.close();
                                         Donetext.close();
                                         remove(filename.c_str());
                                         rename("temp.txt","DoneExamsName.txt");
+                                        continue;
                                     }
                                     else
                                     {

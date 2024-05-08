@@ -1,0 +1,7 @@
+1) what is 2+2?
+	1.2 	2.3 	3.4 	4.5 	
+Master description : right
+Master's score : 20
+	Correct answer: 4
+	student answer: 4
+Total score is : 20
