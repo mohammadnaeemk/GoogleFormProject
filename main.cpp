@@ -363,6 +363,61 @@ int main() {
                         }
                         else if (ans == 7)//Result of exams
                         {
+                            string inpute = "",line="";
+                            int counter =1;
+                            cout<<"Please, after viewing the names of the exam files, enter the file name in full to view the desired file(enter 'exit' to back to the master menu).\n";
+                            fstream  FileShow;
+
+                            FileShow.open("CorrectedExamsName.txt",ios::in);
+                            while (getline(FileShow,line))
+                            {
+                                cout<<counter<<"_ "<<line<<endl;
+                                ++counter;
+                            }
+                            FileShow.close();
+                            cout<<"\n------------------------------------------------------------------------------\n";
+                            while (true)
+                            {
+                                bool F= false;
+                                cout<<"Enter name or exit : \n";
+                                getline(cin>>ws , inpute);
+                                if (input != "exit")
+                                {
+                                    fstream  FileShow;
+                                    FileShow.open("CorrectedExamsName.txt",ios::in);
+                                    while (getline(FileShow,line))
+                                    {
+                                        if (line == inpute)
+                                        {
+                                            F= true;
+                                            break;
+                                        }
+                                    }
+                                    FileShow.close();
+
+                                    if (F)
+                                    {
+                                        string innerLine="";
+                                        fstream FullShow;
+                                        FullShow.open("CorrectedExamList/"+line+".txt",ios::in);
+                                        while (getline(FullShow,innerLine))
+                                        {
+                                            cout<<innerLine<<endl;
+                                        }
+                                        FullShow.close();
+                                    }
+                                    else
+                                    {
+                                        cout<<"The exam you entered is not available!\n";
+                                        continue;
+                                    }
+                                }
+                                else
+                                {
+                                    break;
+                                }
+                            }
+
 
                         }
                         else if (ans == 8)//Correcting exams
