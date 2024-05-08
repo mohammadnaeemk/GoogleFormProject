@@ -1,0 +1,12 @@
+1) whats your name?
+ali
+ok
+5
+2) wher are you from?
+IRAN
+ok
+10
+3) whats your lastmane?
+karimi
+ok
+10

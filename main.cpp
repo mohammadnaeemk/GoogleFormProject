@@ -2,6 +2,7 @@
 #include <string>
 #include <vector>
 #include <fstream>
+#include <cstdio>
 #include "Master.h"
 #include "Student.h"
 #include "Exam.h"
@@ -344,7 +345,7 @@ int main() {
                                                             break;
                                                         } else {
                                                             cout << "Your exam does not found!\n\n";
-                                                            
+
                                                         }
 
                                                 }
@@ -367,8 +368,117 @@ int main() {
                         }
                         else if (ans == 8)//Correcting exams
                         {
+                            while (true)
+                            {
+                                cout << "Please select the name of the exam you want to correct from the list below and enter it.(enter 'exit' to back to the master menu):\n \n";
+                                string line = "",ans="";
+                                int *counter= new int(1);
+                                fstream DoneExamsFile1;
+                                DoneExamsFile1.open("DoneExamsName.txt",ios::in);
+                                while (getline(DoneExamsFile1,line)) {
+                                  cout<<*counter<<"_ "<<line<<endl;
+                                  ++ *counter;
+                                }
+                                DoneExamsFile1.close();
+                                fstream DoneExamsFile2;
+                                DoneExamsFile2.open("DoneExamsName.txt",ios::in);
+                                cout<<endl<<"Name of the exam you want: ";
+                                getline(cin>>ws,ans);
+                                if (ans!="exit") {
+                                    bool F = false;
+                                    while (getline(DoneExamsFile2, line)) {
+                                        if (line == ans)
+                                        {
+                                            F = true;
+                                            break;
+                                        }
+                                    }
+                                    DoneExamsFile2.close();
+                                    if (F)
+                                    {
+                                        string STR="",description="";
+                                        int counter=1,score=0,number=0;
+                                        cout<<"The questions are displayed in order. In the first line, enter the desired text and in the next line,\n";
+                                        cout<<" enter the score corresponding to the answer of the same question.\n \n";
+                                        fstream NewFileInCorrected;
+                                        fstream OldFileInDone;
+                                        NewFileInCorrected.open("CorrectedExamList/"+ans+".txt",ios::out);
+                                        OldFileInDone.open("DoneExamList/"+ans+".txt",ios::in);
+                                        while (getline(OldFileInDone,STR))
+                                        {
+                                            if (counter >= 4 && counter % 2 == 0)
+                                            {
+                                              NewFileInCorrected<<STR<<endl;
+                                                cout<<STR<<endl;
 
-                        } else {
+                                                ++ counter;
+                                            }
+                                            else if (counter >= 4 && counter % 2 != 0)
+                                            {
+                                                NewFileInCorrected<<STR<<endl;
+                                                cout<<STR<<endl<<"Description : ";
+                                                getline(cin>>ws,description);
+                                                NewFileInCorrected<<"Master description : "<<description<<endl;
+                                                cout<< "number : ";
+                                                cin>>number;
+                                                NewFileInCorrected<<"Master number : "<<number<<endl;
+                                                score += number;
+                                                ++ counter;
+                                            }
+                                            else
+                                            {
+                                                ++ counter;
+                                                continue;
+                                            }
+                                        }
+                                        NewFileInCorrected<<"total score is : "<<score;
+                                        //در این جا باید نام فایل امتحانات رو در لیست تکست های مشخص کردیم حذف و اضافه کنیم
+                                        NewFileInCorrected.close();
+                                        OldFileInDone.close();
+
+                                        string filename="DoneExamList/"+ans+".txt";
+                                        remove(filename.c_str());
+                                        //Adding to text file
+                                        fstream Correctedtext;
+                                        Correctedtext.open("CorrectedExamsName.txt",ios::app);
+                                        Correctedtext<<ans<<endl;
+                                        Correctedtext.close();
+
+                                        //Delete from  text file
+                                        fstream Donetext;
+                                        Donetext.open("DoneExamsName.txt",ios::app);
+
+                                        fstream temp;
+                                        temp.open("temp.txt",ios::app);
+                                          string s="";
+                                        while (getline(Donetext,s))
+                                        {
+                                            if (s != ans)
+                                            {
+                                                temp<<s<<endl;
+                                            }
+                                        }
+
+                                         filename="DoneExamsName.txt";
+                                        temp.close();
+                                        Donetext.close();
+                                        remove(filename.c_str());
+                                        rename("temp.txt","DoneExamsName.txt");
+                                    }
+                                    else
+                                    {
+                                        cout<<"The exam you entered does not exist! \n";
+                                    }
+                                }
+                                else
+                                {
+                                    break;
+                                }
+                            }
+                        }
+                        else
+
+                        {
                             cout << "Unknown request!\n";//goes to master menu
                             continue;
                         }

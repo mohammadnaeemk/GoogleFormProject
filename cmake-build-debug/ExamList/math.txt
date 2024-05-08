@@ -1,0 +1,6 @@
+Number of questions : 3
+Time : 10
+Total score : 20
+1) whats your name?
+2) wher are you from?
+3) whats your lastmane?
