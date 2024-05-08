@@ -89,14 +89,23 @@ int main() {
                         {
                             masterFlag = false;
                             break;
-                        } else if (ans == 1)//Add a list of students
+                        }
+                        else if (ans == 1)//Add a list of students
                         {
                             string userSTR = "";
                             cout << "Please enter your students list name : \n";
                             getline(cin >> ws, userSTR);
                             Master::ListMaker(userSTR);
+
+                            fstream studenlist;
+                            studenlist.open("StudentsListName.txt", ios :: app);//Add list name to StudentsListName.txt
+                            if(studenlist.is_open()){
+                                studenlist << userSTR << endl;
+                            }
+
                             cout << "Your list has been successfully created.\n";
-                        } else if (ans == 2)//Making a test exam
+                        }
+                        else if (ans == 2)//Making a test exam
                         {
                             cout << "Please enter your exam name : \n";
                             getline(cin >> ws, name);
@@ -112,7 +121,8 @@ int main() {
                             } else {
                                 cout << "It seems that the process of making the exam had a problem!";
                             }
-                        } else if (ans == 3)//Making a writing exam
+                        }
+                        else if (ans == 3)//Making a writing exam
                         {
                             cout << "Please enter your exam name : \n";
                             getline(cin >> ws, name);
@@ -129,7 +139,8 @@ int main() {
                                 cout << "It seems that the process of making the test exam had a problem!";
                             }
 
-                        } else if (ans == 4)//View student lists and add students
+                        }
+                        else if (ans == 4)//View student lists and add students
                         {
                             while (true) {
                                 int innerAns = 0;
@@ -137,7 +148,8 @@ int main() {
                                 cin >> innerAns;
                                 if (innerAns == 0) {//Back
                                     break;
-                                } else if (innerAns == 1)//See all students
+                                }
+                                else if (innerAns == 1)//See all students
                                 {
                                     cout << "List of all students:\n";
                                     string innerLine = "";
@@ -153,7 +165,8 @@ int main() {
                                         studentcrfile.close();
                                         cout << "Students list have successfully printed.\n";
                                     }
-                                } else if (innerAns == 2)//Add a new student
+                                }
+                                else if (innerAns == 2)//Add a new student
                                 {
                                     cout << "Please enter the student's username and password: ";
                                     string innerInput = "";
@@ -176,7 +189,8 @@ int main() {
 
                                 }
                             }
-                        } else if (ans == 5)//History of exams
+                        }
+                        else if (ans == 5)//History of exams
                         {
                             while (true) {
                                 int innerans = 0;
@@ -184,7 +198,8 @@ int main() {
                                 cin >> innerans;
                                 if (innerans == 0) {//Back
                                     break;
-                                } else if (innerans == 1) {
+                                }
+                                else if (innerans == 1) {
                                     cout << "List of all exams:\n";
                                     string innerLine = "";
                                     fstream examlist;
@@ -206,7 +221,8 @@ int main() {
                                         }
                                         examlist.close();
                                     }
-                                } else if (innerans == 2) {
+                                }
+                                else if (innerans == 2) {
                                     cout << "List of all done exams:\n";
                                     string innerLine = "";
                                     fstream doneexamlist;
@@ -229,7 +245,8 @@ int main() {
                                         doneexamlist.close();
                                     }
 
-                                }else if(innerans == 3) {
+                                }
+                                else if(innerans == 3) {
                                     cout << "Enter your exam name(if it's the test exam then please add 'Test' to the end of your exam's name):\n";
                                     string input = "";
                                     bool flag = true;
@@ -270,13 +287,68 @@ int main() {
                                 }
                             }
 
-                        } else if (ans == 6)//Add list to exams
+                        }
+                        else if (ans == 6)//Add list to exams
+                        {
+                            while(true)
+                            {
+                                cout << "Enter your students list name(enter 'exit' to back to the master menu):\n";
+                                string strInput = "";
+                                getline(cin >> ws, strInput);
+                                if(strInput != "exit") {
+                                    fstream StudentListName;
+                                    string line = "";
+
+                                    StudentListName.open("StudentsListName.txt", ios::in);
+                                    if (StudentListName.is_open()) {
+                                        while (getline(StudentListName, line)) {
+                                            if (line == strInput) {
+                                                string innerStrInput = "";
+                                                cout<< "Ok!\nEnter your exam name(if it's the test exam then please add 'Test' to the end of your exam's name): \n";
+                                                getline(cin >> ws, innerStrInput);
+                                                fstream ExamName;
+                                                ExamName.open("ExamsName.txt", ios::in);
+
+                                                if (ExamName.is_open()) {
+                                                    string innerline = "";
+                                                    while (getline(ExamName, innerline)) {
+                                                        if (innerStrInput == innerline) {
+                                                            fstream StudentListExam;
+                                                            string exam = "ExamList/" + innerStrInput + ".txt";
+                                                            StudentListExam.open(exam, ios::app);
+                                                            if (StudentListExam.is_open()) {
+                                                                StudentListExam << endl << "For students of "
+                                                                                << strInput << endl;
+                                                            }
+                                                            StudentListExam.close();
+                                                            cout
+                                                                    << "Your students list has successfully added to your exam.\n\n";
+                                                            break;
+                                                        } else {
+                                                            cout << "Your exam does not found!\n\n";
+                                                            break;
+                                                        }
+                                                    }
+                                                }
+                                                ExamName.close();
+                                                break;
+                                            } else {
+                                                cout << "Your student list name does not found!\n\n";
+                                                break;
+                                            }
+                                        }
+                                    }
+                                    StudentListName.close();
+                                }else{
+                                    break;
+                                }
+                            }
+                        }
+                        else if (ans == 7)//Result of exams
                         {
 
-                        } else if (ans == 7)//Result of exams
-                        {
-
-                        } else if (ans == 8)//Correcting exams
+                        }
+                        else if (ans == 8)//Correcting exams
                         {
 
                         } else {
