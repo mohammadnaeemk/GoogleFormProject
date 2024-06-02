@@ -8,12 +8,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.5/GoogleFormProject/Exam.cpp" "CMakeFiles/GoogleFormProject.dir/Exam.cpp.obj" "gcc" "CMakeFiles/GoogleFormProject.dir/Exam.cpp.obj.d"
-  "D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.5/GoogleFormProject/ExamTest.cpp" "CMakeFiles/GoogleFormProject.dir/ExamTest.cpp.obj" "gcc" "CMakeFiles/GoogleFormProject.dir/ExamTest.cpp.obj.d"
-  "D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.5/GoogleFormProject/ExamWritten.cpp" "CMakeFiles/GoogleFormProject.dir/ExamWritten.cpp.obj" "gcc" "CMakeFiles/GoogleFormProject.dir/ExamWritten.cpp.obj.d"
-  "D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.5/GoogleFormProject/Master.cpp" "CMakeFiles/GoogleFormProject.dir/Master.cpp.obj" "gcc" "CMakeFiles/GoogleFormProject.dir/Master.cpp.obj.d"
-  "D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.5/GoogleFormProject/Student.cpp" "CMakeFiles/GoogleFormProject.dir/Student.cpp.obj" "gcc" "CMakeFiles/GoogleFormProject.dir/Student.cpp.obj.d"
-  "D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.5/GoogleFormProject/main.cpp" "CMakeFiles/GoogleFormProject.dir/main.cpp.obj" "gcc" "CMakeFiles/GoogleFormProject.dir/main.cpp.obj.d"
+  "C:/Users/ASUS/Desktop/New folder/GoogleFormProject/Exam.cpp" "CMakeFiles/GoogleFormProject.dir/Exam.cpp.obj" "gcc" "CMakeFiles/GoogleFormProject.dir/Exam.cpp.obj.d"
+  "C:/Users/ASUS/Desktop/New folder/GoogleFormProject/ExamTest.cpp" "CMakeFiles/GoogleFormProject.dir/ExamTest.cpp.obj" "gcc" "CMakeFiles/GoogleFormProject.dir/ExamTest.cpp.obj.d"
+  "C:/Users/ASUS/Desktop/New folder/GoogleFormProject/ExamWritten.cpp" "CMakeFiles/GoogleFormProject.dir/ExamWritten.cpp.obj" "gcc" "CMakeFiles/GoogleFormProject.dir/ExamWritten.cpp.obj.d"
+  "C:/Users/ASUS/Desktop/New folder/GoogleFormProject/Master.cpp" "CMakeFiles/GoogleFormProject.dir/Master.cpp.obj" "gcc" "CMakeFiles/GoogleFormProject.dir/Master.cpp.obj.d"
+  "C:/Users/ASUS/Desktop/New folder/GoogleFormProject/Student.cpp" "CMakeFiles/GoogleFormProject.dir/Student.cpp.obj" "gcc" "CMakeFiles/GoogleFormProject.dir/Student.cpp.obj.d"
+  "C:/Users/ASUS/Desktop/New folder/GoogleFormProject/main.cpp" "CMakeFiles/GoogleFormProject.dir/main.cpp.obj" "gcc" "CMakeFiles/GoogleFormProject.dir/main.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

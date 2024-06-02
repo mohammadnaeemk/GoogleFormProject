@@ -82,7 +82,7 @@ int masterPassword;
      file.open(examName, ios::in);
 
      if (!file.is_open()) {
-         cerr << "Error opening file." << endl;
+         cerr << "Error has occurred while opening file!" << endl;
          return;
      }
 

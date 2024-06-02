@@ -1,0 +1,9 @@
+Number of questions : 1
+Time : 5
+Total score : 5
+1) sohd hsidhish dhsihdh?
+	1.2000 	2.22 	3.786876 	4.5 	
+	Correct answer: 1
+
+
+For students of Bargh1 Condition: Active

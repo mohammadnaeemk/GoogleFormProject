@@ -5,3 +5,5 @@ Total score : 5
 	1.2 	2.3 	3.4 	4.5 	
 	Correct answer: 4
 For students of computer1 Condition: Active
+
+For students of Bargh1 Condition: Deactive

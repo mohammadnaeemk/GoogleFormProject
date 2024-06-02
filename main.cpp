@@ -81,7 +81,7 @@ int main() {
                         }
                         else
                         {
-                            cout<<"Sorry, your order is not available!\n";
+                            cout<<"Unknown request!\n";
                             break;
                         }
                     }
@@ -135,8 +135,8 @@ int main() {
                                 " 6. Add list to exams.\n"
                                 " 7. Result of exams.\n"
                                 " 8. Correcting exams.\n"
-                                " 9. Enable/disable the exam.\n"
-                                " 10. Crating rating.\n";
+                                " 9. Enable/Disable the exam.\n"
+                                "10. Creating a rating.\n";
                         cin >> ans;
 
                         int qnumber, qtime, score;
@@ -588,14 +588,14 @@ int main() {
                         {
                             string studentList,examName;
                             int order = 0;
-                            cout<<"If you change the exam status, enter number 1 and if you return to the menu, enter 0: \n";
+                            cout<<"If you want to change the exam status enter number 1 and if you want to return to the main menu enter 0: \n";
                             cin>>order;
                             if (order == 1)
                             {
                                 while (true)
                                 {
                                     string orderSTR="";
-                                    cout << "Please enter the name of the exam you want to enable or disable.(enter 'exit' to back to the master menu):\n \n";
+                                    cout << "Please enter the name of the exam you want to enable or disable.(enter 'exit' to back to the master menu):\n";
                                     getline(cin >> ws, orderSTR);
                                     if (orderSTR != "exit" )
                                     {
@@ -615,7 +615,7 @@ int main() {
                                         ExamName.close();
                                         if (flag)
                                         {
-                                            cout << "Please enter the name of the list of desired students.(enter 'exit' to back to the master menu):\n \n";
+                                            cout << "Please enter the name of the list of desired students.(enter 'exit' to back to the master menu):\n";
                                             getline(cin>>ws, orderSTR);
                                             if (orderSTR != "exit")
                                             {
@@ -672,7 +672,7 @@ int main() {
                             }
 
                         }
-                        else if (ans == 10)//Crating rating
+                        else if (ans == 10)//Creating rating
                         {
                             while (true)
                             {
