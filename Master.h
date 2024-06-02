@@ -16,5 +16,6 @@ public:
     static void ListMaker(string);
     static bool UserNameChecker(string,string,bool);
     static string StudentReturner(string);
+    static void deactivateStudent(const string& examName, const string& listName);
 };
 #endif

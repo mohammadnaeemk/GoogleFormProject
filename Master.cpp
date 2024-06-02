@@ -3,7 +3,7 @@
 #include <iostream>
 #include <string>
 #include <fstream>
-
+#include <sstream>
 using namespace std;
 
 string masterName;
@@ -75,6 +75,90 @@ int masterPassword;
      return line;
  }
 
+ //------------------------------------------------------------------
+  void Master::deactivateStudent(const string& examName,const  string& listName) {
+     // باز کردن فایل ورودی برای خواندن
+     fstream file;
+     file.open(examName, ios::in);
+
+     if (!file.is_open()) {
+         cerr << "Error opening file." << endl;
+         return;
+     }
+
+     // باز کردن فایل موقت برای نوشتن تغییرات
+     ofstream outputFile("temp.txt");
+
+     if (!outputFile.is_open()) {
+         cerr << "Error opening temporary file." << endl;
+         file.close();
+         return;
+     }
+
+     string line;
+     bool studentFound = false; // پرچم برای پیدا کردن نام دانشجو
+
+     // خواندن فایل ورودی خط به خط
+     while (getline(file, line)) {
+         // جستجوی عبارت "For students of " در خط
+         int pos = line.find("For students of ");
+         if (pos != string::npos) {
+             // بررسی اینکه نام دانشجو بلافاصله بعد از "For students of " باشد
+             int namePos = line.find(listName, pos + 16);
+             if (namePos == pos + 16) {
+                 studentFound = true; // نام دانشجو پیدا شد
+                 // پیدا کردن وضعیت فعلی (Active یا Deactive)
+                 int conditionPos = line.find(" Condition: Active", namePos + listName.length());
+                 if (conditionPos != string::npos) {
+                     // وضعیت فعلی Active است
+                     cout << "The list " << listName << " is currently Active. Do you want to deactivate it? (yes/no): ";
+                 } else {
+                     // پیدا کردن وضعیت Deactive
+                     conditionPos = line.find(" Condition: Deactive", namePos + listName.length());
+                     if (conditionPos != string::npos) {
+                         // وضعیت فعلی Deactive است
+                         cout << "The list " << listName << " is currently Deactive. Do you want to activate it? (yes/no): ";
+                     } else {
+                         // اگر وضعیت پیدا نشد، خط را بدون تغییر در فایل موقت می‌نویسیم
+                         outputFile << line << '\n';
+                         continue; // به خط بعدی بروید
+                     }
+                 }
+
+                 // گرفتن پاسخ کاربر و تغییر وضعیت بر اساس پاسخ
+                 string response;
+                 cin >> response;
+                 if (response == "yes") {
+                     if (line.find(" Condition: Active") != string::npos) {
+                         // تغییر وضعیت از Active به Deactive
+                         line.replace(conditionPos, 19, " Condition: Deactive");
+                         cout<<"Changes applied successfully :) \n";
+                     } else {
+                         // تغییر وضعیت از Deactive به Active
+                         line.replace(conditionPos, 20, " Condition: Active");
+                         cout<<"Changes applied successfully :) \n";
+                     }
+                 }
+             }
+         }
+         // نوشتن خط (تغییر یافته یا اصلی) به فایل موقتی
+         outputFile << line << '\n';
+     }
+
+     // بستن فایل‌های باز شده
+     file.close();
+     outputFile.close();
+
+     // جایگزینی فایل اصلی با فایل موقتی
+     remove(examName.c_str());
+     rename("temp.txt", examName.c_str());
+
+     // اگر نام لیست در هیچ کجای فایل پیدا نشد
+     if (!studentFound) {
+         cout << "The student " << listName << " was not found in the file." << endl;
+     }
+ }
+ //---------------------------------------------------------
 
 //Student list maker
 void Master::ListMaker(string listName)

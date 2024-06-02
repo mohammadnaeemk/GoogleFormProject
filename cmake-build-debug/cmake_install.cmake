@@ -1,4 +1,4 @@
-# Install script for directory: D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.4/GoogleFormProject
+# Install script for directory: D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.5/GoogleFormProject
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.4/GoogleFormProject/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.5/GoogleFormProject/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

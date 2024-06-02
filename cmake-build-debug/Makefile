@@ -56,10 +56,10 @@ RM = "D:\Apps\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\1.4\GoogleFormProject
+CMAKE_SOURCE_DIR = D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\1.5\GoogleFormProject
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\1.4\GoogleFormProject\cmake-build-debug
+CMAKE_BINARY_DIR = D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\1.5\GoogleFormProject\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\1.4\GoogleFormProject\cmake-build-debug\CMakeFiles D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\1.4\GoogleFormProject\cmake-build-debug\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\1.5\GoogleFormProject\cmake-build-debug\CMakeFiles D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\1.5\GoogleFormProject\cmake-build-debug\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\1.4\GoogleFormProject\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\1.5\GoogleFormProject\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target

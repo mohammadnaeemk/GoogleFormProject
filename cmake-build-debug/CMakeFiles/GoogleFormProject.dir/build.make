@@ -52,10 +52,10 @@ RM = "D:\Apps\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\1.4\GoogleFormProject
+CMAKE_SOURCE_DIR = D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\1.5\GoogleFormProject
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\1.4\GoogleFormProject\cmake-build-debug
+CMAKE_BINARY_DIR = D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\1.5\GoogleFormProject\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/GoogleFormProject.dir/depend.make
@@ -69,88 +69,88 @@ include CMakeFiles/GoogleFormProject.dir/progress.make
 include CMakeFiles/GoogleFormProject.dir/flags.make
 
 CMakeFiles/GoogleFormProject.dir/main.cpp.obj: CMakeFiles/GoogleFormProject.dir/flags.make
-CMakeFiles/GoogleFormProject.dir/main.cpp.obj: D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.4/GoogleFormProject/main.cpp
+CMakeFiles/GoogleFormProject.dir/main.cpp.obj: D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.5/GoogleFormProject/main.cpp
 CMakeFiles/GoogleFormProject.dir/main.cpp.obj: CMakeFiles/GoogleFormProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\1.4\GoogleFormProject\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/GoogleFormProject.dir/main.cpp.obj"
-	"D:\Apps\CLion 2023.3.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GoogleFormProject.dir/main.cpp.obj -MF CMakeFiles\GoogleFormProject.dir\main.cpp.obj.d -o CMakeFiles\GoogleFormProject.dir\main.cpp.obj -c D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\1.4\GoogleFormProject\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\1.5\GoogleFormProject\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/GoogleFormProject.dir/main.cpp.obj"
+	"D:\Apps\CLion 2023.3.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GoogleFormProject.dir/main.cpp.obj -MF CMakeFiles\GoogleFormProject.dir\main.cpp.obj.d -o CMakeFiles\GoogleFormProject.dir\main.cpp.obj -c D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\1.5\GoogleFormProject\main.cpp
 
 CMakeFiles/GoogleFormProject.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GoogleFormProject.dir/main.cpp.i"
-	"D:\Apps\CLion 2023.3.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\1.4\GoogleFormProject\main.cpp > CMakeFiles\GoogleFormProject.dir\main.cpp.i
+	"D:\Apps\CLion 2023.3.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\1.5\GoogleFormProject\main.cpp > CMakeFiles\GoogleFormProject.dir\main.cpp.i
 
 CMakeFiles/GoogleFormProject.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GoogleFormProject.dir/main.cpp.s"
-	"D:\Apps\CLion 2023.3.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\1.4\GoogleFormProject\main.cpp -o CMakeFiles\GoogleFormProject.dir\main.cpp.s
+	"D:\Apps\CLion 2023.3.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\1.5\GoogleFormProject\main.cpp -o CMakeFiles\GoogleFormProject.dir\main.cpp.s
 
 CMakeFiles/GoogleFormProject.dir/Master.cpp.obj: CMakeFiles/GoogleFormProject.dir/flags.make
-CMakeFiles/GoogleFormProject.dir/Master.cpp.obj: D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.4/GoogleFormProject/Master.cpp
+CMakeFiles/GoogleFormProject.dir/Master.cpp.obj: D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.5/GoogleFormProject/Master.cpp
 CMakeFiles/GoogleFormProject.dir/Master.cpp.obj: CMakeFiles/GoogleFormProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\1.4\GoogleFormProject\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/GoogleFormProject.dir/Master.cpp.obj"
-	"D:\Apps\CLion 2023.3.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GoogleFormProject.dir/Master.cpp.obj -MF CMakeFiles\GoogleFormProject.dir\Master.cpp.obj.d -o CMakeFiles\GoogleFormProject.dir\Master.cpp.obj -c D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\1.4\GoogleFormProject\Master.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\1.5\GoogleFormProject\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/GoogleFormProject.dir/Master.cpp.obj"
+	"D:\Apps\CLion 2023.3.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GoogleFormProject.dir/Master.cpp.obj -MF CMakeFiles\GoogleFormProject.dir\Master.cpp.obj.d -o CMakeFiles\GoogleFormProject.dir\Master.cpp.obj -c D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\1.5\GoogleFormProject\Master.cpp
 
 CMakeFiles/GoogleFormProject.dir/Master.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GoogleFormProject.dir/Master.cpp.i"
-	"D:\Apps\CLion 2023.3.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\1.4\GoogleFormProject\Master.cpp > CMakeFiles\GoogleFormProject.dir\Master.cpp.i
+	"D:\Apps\CLion 2023.3.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\1.5\GoogleFormProject\Master.cpp > CMakeFiles\GoogleFormProject.dir\Master.cpp.i
 
 CMakeFiles/GoogleFormProject.dir/Master.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GoogleFormProject.dir/Master.cpp.s"
-	"D:\Apps\CLion 2023.3.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\1.4\GoogleFormProject\Master.cpp -o CMakeFiles\GoogleFormProject.dir\Master.cpp.s
+	"D:\Apps\CLion 2023.3.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\1.5\GoogleFormProject\Master.cpp -o CMakeFiles\GoogleFormProject.dir\Master.cpp.s
 
 CMakeFiles/GoogleFormProject.dir/Student.cpp.obj: CMakeFiles/GoogleFormProject.dir/flags.make
-CMakeFiles/GoogleFormProject.dir/Student.cpp.obj: D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.4/GoogleFormProject/Student.cpp
+CMakeFiles/GoogleFormProject.dir/Student.cpp.obj: D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.5/GoogleFormProject/Student.cpp
 CMakeFiles/GoogleFormProject.dir/Student.cpp.obj: CMakeFiles/GoogleFormProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\1.4\GoogleFormProject\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/GoogleFormProject.dir/Student.cpp.obj"
-	"D:\Apps\CLion 2023.3.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GoogleFormProject.dir/Student.cpp.obj -MF CMakeFiles\GoogleFormProject.dir\Student.cpp.obj.d -o CMakeFiles\GoogleFormProject.dir\Student.cpp.obj -c D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\1.4\GoogleFormProject\Student.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\1.5\GoogleFormProject\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/GoogleFormProject.dir/Student.cpp.obj"
+	"D:\Apps\CLion 2023.3.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GoogleFormProject.dir/Student.cpp.obj -MF CMakeFiles\GoogleFormProject.dir\Student.cpp.obj.d -o CMakeFiles\GoogleFormProject.dir\Student.cpp.obj -c D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\1.5\GoogleFormProject\Student.cpp
 
 CMakeFiles/GoogleFormProject.dir/Student.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GoogleFormProject.dir/Student.cpp.i"
-	"D:\Apps\CLion 2023.3.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\1.4\GoogleFormProject\Student.cpp > CMakeFiles\GoogleFormProject.dir\Student.cpp.i
+	"D:\Apps\CLion 2023.3.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\1.5\GoogleFormProject\Student.cpp > CMakeFiles\GoogleFormProject.dir\Student.cpp.i
 
 CMakeFiles/GoogleFormProject.dir/Student.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GoogleFormProject.dir/Student.cpp.s"
-	"D:\Apps\CLion 2023.3.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\1.4\GoogleFormProject\Student.cpp -o CMakeFiles\GoogleFormProject.dir\Student.cpp.s
+	"D:\Apps\CLion 2023.3.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\1.5\GoogleFormProject\Student.cpp -o CMakeFiles\GoogleFormProject.dir\Student.cpp.s
 
 CMakeFiles/GoogleFormProject.dir/ExamWritten.cpp.obj: CMakeFiles/GoogleFormProject.dir/flags.make
-CMakeFiles/GoogleFormProject.dir/ExamWritten.cpp.obj: D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.4/GoogleFormProject/ExamWritten.cpp
+CMakeFiles/GoogleFormProject.dir/ExamWritten.cpp.obj: D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.5/GoogleFormProject/ExamWritten.cpp
 CMakeFiles/GoogleFormProject.dir/ExamWritten.cpp.obj: CMakeFiles/GoogleFormProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\1.4\GoogleFormProject\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/GoogleFormProject.dir/ExamWritten.cpp.obj"
-	"D:\Apps\CLion 2023.3.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GoogleFormProject.dir/ExamWritten.cpp.obj -MF CMakeFiles\GoogleFormProject.dir\ExamWritten.cpp.obj.d -o CMakeFiles\GoogleFormProject.dir\ExamWritten.cpp.obj -c D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\1.4\GoogleFormProject\ExamWritten.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\1.5\GoogleFormProject\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/GoogleFormProject.dir/ExamWritten.cpp.obj"
+	"D:\Apps\CLion 2023.3.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GoogleFormProject.dir/ExamWritten.cpp.obj -MF CMakeFiles\GoogleFormProject.dir\ExamWritten.cpp.obj.d -o CMakeFiles\GoogleFormProject.dir\ExamWritten.cpp.obj -c D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\1.5\GoogleFormProject\ExamWritten.cpp
 
 CMakeFiles/GoogleFormProject.dir/ExamWritten.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GoogleFormProject.dir/ExamWritten.cpp.i"
-	"D:\Apps\CLion 2023.3.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\1.4\GoogleFormProject\ExamWritten.cpp > CMakeFiles\GoogleFormProject.dir\ExamWritten.cpp.i
+	"D:\Apps\CLion 2023.3.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\1.5\GoogleFormProject\ExamWritten.cpp > CMakeFiles\GoogleFormProject.dir\ExamWritten.cpp.i
 
 CMakeFiles/GoogleFormProject.dir/ExamWritten.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GoogleFormProject.dir/ExamWritten.cpp.s"
-	"D:\Apps\CLion 2023.3.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\1.4\GoogleFormProject\ExamWritten.cpp -o CMakeFiles\GoogleFormProject.dir\ExamWritten.cpp.s
+	"D:\Apps\CLion 2023.3.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\1.5\GoogleFormProject\ExamWritten.cpp -o CMakeFiles\GoogleFormProject.dir\ExamWritten.cpp.s
 
 CMakeFiles/GoogleFormProject.dir/ExamTest.cpp.obj: CMakeFiles/GoogleFormProject.dir/flags.make
-CMakeFiles/GoogleFormProject.dir/ExamTest.cpp.obj: D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.4/GoogleFormProject/ExamTest.cpp
+CMakeFiles/GoogleFormProject.dir/ExamTest.cpp.obj: D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.5/GoogleFormProject/ExamTest.cpp
 CMakeFiles/GoogleFormProject.dir/ExamTest.cpp.obj: CMakeFiles/GoogleFormProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\1.4\GoogleFormProject\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/GoogleFormProject.dir/ExamTest.cpp.obj"
-	"D:\Apps\CLion 2023.3.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GoogleFormProject.dir/ExamTest.cpp.obj -MF CMakeFiles\GoogleFormProject.dir\ExamTest.cpp.obj.d -o CMakeFiles\GoogleFormProject.dir\ExamTest.cpp.obj -c D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\1.4\GoogleFormProject\ExamTest.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\1.5\GoogleFormProject\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/GoogleFormProject.dir/ExamTest.cpp.obj"
+	"D:\Apps\CLion 2023.3.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GoogleFormProject.dir/ExamTest.cpp.obj -MF CMakeFiles\GoogleFormProject.dir\ExamTest.cpp.obj.d -o CMakeFiles\GoogleFormProject.dir\ExamTest.cpp.obj -c D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\1.5\GoogleFormProject\ExamTest.cpp
 
 CMakeFiles/GoogleFormProject.dir/ExamTest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GoogleFormProject.dir/ExamTest.cpp.i"
-	"D:\Apps\CLion 2023.3.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\1.4\GoogleFormProject\ExamTest.cpp > CMakeFiles\GoogleFormProject.dir\ExamTest.cpp.i
+	"D:\Apps\CLion 2023.3.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\1.5\GoogleFormProject\ExamTest.cpp > CMakeFiles\GoogleFormProject.dir\ExamTest.cpp.i
 
 CMakeFiles/GoogleFormProject.dir/ExamTest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GoogleFormProject.dir/ExamTest.cpp.s"
-	"D:\Apps\CLion 2023.3.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\1.4\GoogleFormProject\ExamTest.cpp -o CMakeFiles\GoogleFormProject.dir\ExamTest.cpp.s
+	"D:\Apps\CLion 2023.3.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\1.5\GoogleFormProject\ExamTest.cpp -o CMakeFiles\GoogleFormProject.dir\ExamTest.cpp.s
 
 CMakeFiles/GoogleFormProject.dir/Exam.cpp.obj: CMakeFiles/GoogleFormProject.dir/flags.make
-CMakeFiles/GoogleFormProject.dir/Exam.cpp.obj: D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.4/GoogleFormProject/Exam.cpp
+CMakeFiles/GoogleFormProject.dir/Exam.cpp.obj: D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.5/GoogleFormProject/Exam.cpp
 CMakeFiles/GoogleFormProject.dir/Exam.cpp.obj: CMakeFiles/GoogleFormProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\1.4\GoogleFormProject\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/GoogleFormProject.dir/Exam.cpp.obj"
-	"D:\Apps\CLion 2023.3.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GoogleFormProject.dir/Exam.cpp.obj -MF CMakeFiles\GoogleFormProject.dir\Exam.cpp.obj.d -o CMakeFiles\GoogleFormProject.dir\Exam.cpp.obj -c D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\1.4\GoogleFormProject\Exam.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\1.5\GoogleFormProject\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/GoogleFormProject.dir/Exam.cpp.obj"
+	"D:\Apps\CLion 2023.3.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GoogleFormProject.dir/Exam.cpp.obj -MF CMakeFiles\GoogleFormProject.dir\Exam.cpp.obj.d -o CMakeFiles\GoogleFormProject.dir\Exam.cpp.obj -c D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\1.5\GoogleFormProject\Exam.cpp
 
 CMakeFiles/GoogleFormProject.dir/Exam.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GoogleFormProject.dir/Exam.cpp.i"
-	"D:\Apps\CLion 2023.3.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\1.4\GoogleFormProject\Exam.cpp > CMakeFiles\GoogleFormProject.dir\Exam.cpp.i
+	"D:\Apps\CLion 2023.3.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\1.5\GoogleFormProject\Exam.cpp > CMakeFiles\GoogleFormProject.dir\Exam.cpp.i
 
 CMakeFiles/GoogleFormProject.dir/Exam.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GoogleFormProject.dir/Exam.cpp.s"
-	"D:\Apps\CLion 2023.3.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\1.4\GoogleFormProject\Exam.cpp -o CMakeFiles\GoogleFormProject.dir\Exam.cpp.s
+	"D:\Apps\CLion 2023.3.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\1.5\GoogleFormProject\Exam.cpp -o CMakeFiles\GoogleFormProject.dir\Exam.cpp.s
 
 # Object files for target GoogleFormProject
 GoogleFormProject_OBJECTS = \
@@ -174,7 +174,7 @@ GoogleFormProject.exe: CMakeFiles/GoogleFormProject.dir/build.make
 GoogleFormProject.exe: CMakeFiles/GoogleFormProject.dir/linkLibs.rsp
 GoogleFormProject.exe: CMakeFiles/GoogleFormProject.dir/objects1.rsp
 GoogleFormProject.exe: CMakeFiles/GoogleFormProject.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\1.4\GoogleFormProject\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable GoogleFormProject.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\1.5\GoogleFormProject\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable GoogleFormProject.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\GoogleFormProject.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -186,6 +186,6 @@ CMakeFiles/GoogleFormProject.dir/clean:
 .PHONY : CMakeFiles/GoogleFormProject.dir/clean
 
 CMakeFiles/GoogleFormProject.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\1.4\GoogleFormProject D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\1.4\GoogleFormProject D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\1.4\GoogleFormProject\cmake-build-debug D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\1.4\GoogleFormProject\cmake-build-debug D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\1.4\GoogleFormProject\cmake-build-debug\CMakeFiles\GoogleFormProject.dir\DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\1.5\GoogleFormProject D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\1.5\GoogleFormProject D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\1.5\GoogleFormProject\cmake-build-debug D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\1.5\GoogleFormProject\cmake-build-debug D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\1.5\GoogleFormProject\cmake-build-debug\CMakeFiles\GoogleFormProject.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/GoogleFormProject.dir/depend
 

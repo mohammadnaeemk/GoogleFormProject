@@ -22,6 +22,9 @@ int main() {
                 "3. Register\n";
         int op = 0;
         cin >> op;
+
+
+        //---------------------------------- START student part ----------------------------------
         if (op == 1) {
             cout << "Please enter your username and password(Enter 0 to return to the main menu):";
             string input = "";
@@ -32,20 +35,70 @@ int main() {
             }
             fstream studentfile;
             studentfile.open("StudentsDB.txt", ios::in);//read from students file
+            bool log= false;
             if (studentfile.is_open()) {
                 string line;
                 while (getline(studentfile, line)) { //search for student
                     if (line == input) {
-                        cout << "You have successfully logged in as a student\n";
+                        log = true;
+                        break;
                     } else {
-                        cout << "Invalid username or password!\n\n";
-                        continue; //goes to menu page
+                        log = false;
                     }
                 }
+                if (log == true)
+                {
+                    while (true) {
+                        int *order = new int();
+                        cout << "You have successfully logged in as a student\n \n";
+                        cout << "Choose your desired option from the menu below...\n"
+                                " 0. Back to the main menu.\n "
+                                "1. My active exams...\n "
+                                "2. The result of my exams...\n "
+                                "3. The result of my protests...\n"
+                                "4. Show ratings...\n";
+                        cin >> *order;
+                        if (*order == 0)
+                        {
+                        cout<<"Returning to the main menu... \n";
+                            break;
+                        }
+                        else if (*order == 1)
+                        {
+
+                        }
+                        else if (*order == 2)
+                        {
+
+                        }
+                        else if (*order == 3)
+                        {
+
+                        }
+                        else if (*order == 4)
+                        {
+
+                        }
+                        else
+                        {
+                            cout<<"Sorry, your order is not available!\n";
+                            break;
+                        }
+                    }
+                }
+                else
+                {
+                    cout << "Invalid username or password!\n\n";
+                    continue;
+                }
+
                 studentfile.close();
             }
 
         }
+        //---------------------------------- END student part ----------------------------------
+
+
         if (op == 2) {
             cout << "Please enter your username and password(enter 0 to return to the main menu):";
             string input = "";
@@ -81,7 +134,9 @@ int main() {
                                 " 5. History of exams.\n"
                                 " 6. Add list to exams.\n"
                                 " 7. Result of exams.\n"
-                                " 8. Correcting exams.\n";
+                                " 8. Correcting exams.\n"
+                                " 9. Enable/disable the exam.\n"
+                                " 10. Crating rating.\n";
                         cin >> ans;
 
                         int qnumber, qtime, score;
@@ -337,7 +392,7 @@ int main() {
                                                             StudentListExam.open(exam, ios::app);
                                                             if (StudentListExam.is_open()) {
                                                                 StudentListExam << endl << "For students of "
-                                                                                << strInput << endl;
+                                                                                << strInput <<" Condition: Deactive" << endl;
                                                             }
                                                             StudentListExam.close();
                                                             cout<< "Your students list has successfully added to your exam.\n\n";
@@ -353,7 +408,6 @@ int main() {
                                                 cout << "Your student list name does not found!\n\n";
 
                                             }
-
                                     }
                                     StudentListName.close();
                                 }else{
@@ -530,6 +584,102 @@ int main() {
                                 }
                             }
                         }
+                        else if (ans == 9)//Enable/disable the exam
+                        {
+                            string studentList,examName;
+                            int order = 0;
+                            cout<<"If you change the exam status, enter number 1 and if you return to the menu, enter 0: \n";
+                            cin>>order;
+                            if (order == 1)
+                            {
+                                while (true)
+                                {
+                                    string orderSTR="";
+                                    cout << "Please enter the name of the exam you want to enable or disable.(enter 'exit' to back to the master menu):\n \n";
+                                    getline(cin >> ws, orderSTR);
+                                    if (orderSTR != "exit" )
+                                    {
+                                        bool flag= false;
+                                        fstream ExamName;
+                                        ExamName.open("ExamsName.txt", ios::in);
+                                        string innerline = "";
+                                        if (ExamName.is_open()) {
+                                            while (getline(ExamName, innerline)) {
+                                                if (orderSTR == innerline) {
+                                                    flag= true;
+                                                    examName = orderSTR;
+                                                    break;
+                                                }
+                                            }
+                                        }
+                                        ExamName.close();
+                                        if (flag)
+                                        {
+                                            cout << "Please enter the name of the list of desired students.(enter 'exit' to back to the master menu):\n \n";
+                                            getline(cin>>ws, orderSTR);
+                                            if (orderSTR != "exit")
+                                            {
+                                                fstream studentLisName;
+                                                studentLisName.open("StudentsListName.txt", ios::in);
+                                                innerline = "";
+                                                if (studentLisName.is_open()) {
+                                                    while (getline(studentLisName, innerline)) {
+                                                        if (orderSTR == innerline) {
+                                                            flag= true;
+                                                            studentList = orderSTR;
+                                                            studentLisName.close();
+                                                            break;
+                                                        }
+                                                        else
+                                                        {
+                                                            flag= false;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            else
+                                            {
+                                                cout<<"Returning to menu... \n";
+                                                continue;
+                                            }
+
+                                            //Here we have to check if the name of that list is present in that exam and determine whether it is active or inactive
+
+                                            if (flag == true)
+                                            {
+                                               Master::deactivateStudent("ExamList/"+examName+".txt", studentList);
+                                            }
+
+
+
+                                        }
+                                        else
+                                        {
+                                            cout<<"Unfortunately, the exam you are looking for does not exist.\n";
+                                            continue;
+                                        }
+                                    }
+                                    else
+                                    {
+                                        break;
+                                    }
+                                }
+                            }
+                            else
+                            {
+                                cout<<"Returning to menu... \n";
+                                continue;
+                            }
+
+                        }
+                        else if (ans == 10)//Crating rating
+                        {
+                            while (true)
+                            {
+                                cout << "Please select the name of the exam you want to correct from the list below and enter it.(enter 'exit' to back to the master menu):\n \n";
+
+                            }
+                        }
                         else
 
                         {
@@ -572,7 +722,8 @@ int main() {
                     cout<<"Username is already exist!"<<endl;
                     continue;
                 }
-            } else if (op2 == "student") {
+            }
+            else if (op2 == "student") {
                 cout << "Please enter a username and a password: ";
                 string input = "";
                 getline(cin >> ws, input);

@@ -1,6 +1,6 @@
 CMakeFiles/GoogleFormProject.dir/Master.cpp.obj: \
- D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\1.4\GoogleFormProject\Master.cpp \
- D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\1.4\GoogleFormProject\Master.h \
+ D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\1.5\GoogleFormProject\Master.cpp \
+ D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\1.5\GoogleFormProject\Master.h \
  D:/Apps/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/string \
  D:/Apps/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/requires_hosted.h \
  D:/Apps/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
@@ -147,4 +147,6 @@ CMakeFiles/GoogleFormProject.dir/Master.cpp.obj: \
  D:/Apps/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/codecvt.h \
  D:/Apps/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/basic_file.h \
  D:/Apps/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++io.h \
- D:/Apps/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/fstream.tcc
+ D:/Apps/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/fstream.tcc \
+ D:/Apps/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/sstream \
+ D:/Apps/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/sstream.tcc

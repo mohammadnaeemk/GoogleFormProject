@@ -1,6 +1,6 @@
 CMakeFiles/GoogleFormProject.dir/Student.cpp.obj: \
- D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\1.4\GoogleFormProject\Student.cpp \
- D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\1.4\GoogleFormProject\Student.h \
+ D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\1.5\GoogleFormProject\Student.cpp \
+ D:\Naeem\Daneshgah\TERM2\pishrafte\MiniProject\1.5\GoogleFormProject\Student.h \
  D:/Apps/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iostream \
  D:/Apps/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/requires_hosted.h \
  D:/Apps/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \

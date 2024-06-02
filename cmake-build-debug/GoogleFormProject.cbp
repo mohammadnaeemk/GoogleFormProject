@@ -8,18 +8,18 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.4/GoogleFormProject/cmake-build-debug"/>
+				<Option working_dir="D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.5/GoogleFormProject/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="D:/Apps/CLion 2023.3.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.4/GoogleFormProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="D:/Apps/CLion 2023.3.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.4/GoogleFormProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/Apps/CLion 2023.3.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.4/GoogleFormProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/Apps/CLion 2023.3.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.4/GoogleFormProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/Apps/CLion 2023.3.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.5/GoogleFormProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="D:/Apps/CLion 2023.3.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.5/GoogleFormProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Apps/CLion 2023.3.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.5/GoogleFormProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Apps/CLion 2023.3.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.5/GoogleFormProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="GoogleFormProject">
-				<Option output="D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.4/GoogleFormProject/cmake-build-debug/GoogleFormProject.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.4/GoogleFormProject/cmake-build-debug"/>
+				<Option output="D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.5/GoogleFormProject/cmake-build-debug/GoogleFormProject.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.5/GoogleFormProject/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -33,15 +33,15 @@
 					<Add directory="D:/Apps/CLion 2023.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="D:/Apps/CLion 2023.3.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.4/GoogleFormProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 GoogleFormProject"/>
-					<CompileFile command="D:/Apps/CLion 2023.3.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.4/GoogleFormProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/Apps/CLion 2023.3.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.4/GoogleFormProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/Apps/CLion 2023.3.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.4/GoogleFormProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/Apps/CLion 2023.3.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.5/GoogleFormProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 GoogleFormProject"/>
+					<CompileFile command="D:/Apps/CLion 2023.3.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.5/GoogleFormProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Apps/CLion 2023.3.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.5/GoogleFormProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Apps/CLion 2023.3.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.5/GoogleFormProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="GoogleFormProject/fast">
-				<Option output="D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.4/GoogleFormProject/cmake-build-debug/GoogleFormProject.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.4/GoogleFormProject/cmake-build-debug"/>
+				<Option output="D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.5/GoogleFormProject/cmake-build-debug/GoogleFormProject.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.5/GoogleFormProject/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -55,67 +55,67 @@
 					<Add directory="D:/Apps/CLion 2023.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="D:/Apps/CLion 2023.3.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.4/GoogleFormProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 GoogleFormProject/fast"/>
-					<CompileFile command="D:/Apps/CLion 2023.3.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.4/GoogleFormProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/Apps/CLion 2023.3.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.4/GoogleFormProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/Apps/CLion 2023.3.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.4/GoogleFormProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/Apps/CLion 2023.3.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.5/GoogleFormProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 GoogleFormProject/fast"/>
+					<CompileFile command="D:/Apps/CLion 2023.3.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.5/GoogleFormProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Apps/CLion 2023.3.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.5/GoogleFormProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Apps/CLion 2023.3.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.5/GoogleFormProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.4/GoogleFormProject/cmake-build-debug"/>
+				<Option working_dir="D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.5/GoogleFormProject/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="D:/Apps/CLion 2023.3.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.4/GoogleFormProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="D:/Apps/CLion 2023.3.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.4/GoogleFormProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/Apps/CLion 2023.3.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.4/GoogleFormProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/Apps/CLion 2023.3.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.4/GoogleFormProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/Apps/CLion 2023.3.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.5/GoogleFormProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="D:/Apps/CLion 2023.3.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.5/GoogleFormProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Apps/CLion 2023.3.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.5/GoogleFormProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Apps/CLion 2023.3.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.5/GoogleFormProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.4/GoogleFormProject/cmake-build-debug"/>
+				<Option working_dir="D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.5/GoogleFormProject/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="D:/Apps/CLion 2023.3.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.4/GoogleFormProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="D:/Apps/CLion 2023.3.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.4/GoogleFormProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/Apps/CLion 2023.3.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.4/GoogleFormProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/Apps/CLion 2023.3.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.4/GoogleFormProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/Apps/CLion 2023.3.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.5/GoogleFormProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="D:/Apps/CLion 2023.3.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.5/GoogleFormProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Apps/CLion 2023.3.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.5/GoogleFormProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Apps/CLion 2023.3.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.5/GoogleFormProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.4/GoogleFormProject/Exam.cpp">
+		<Unit filename="D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.5/GoogleFormProject/Exam.cpp">
 			<Option target="GoogleFormProject"/>
 		</Unit>
-		<Unit filename="D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.4/GoogleFormProject/Exam.h">
+		<Unit filename="D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.5/GoogleFormProject/Exam.h">
 			<Option target="GoogleFormProject"/>
 		</Unit>
-		<Unit filename="D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.4/GoogleFormProject/ExamTest.cpp">
+		<Unit filename="D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.5/GoogleFormProject/ExamTest.cpp">
 			<Option target="GoogleFormProject"/>
 		</Unit>
-		<Unit filename="D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.4/GoogleFormProject/ExamTest.h">
+		<Unit filename="D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.5/GoogleFormProject/ExamTest.h">
 			<Option target="GoogleFormProject"/>
 		</Unit>
-		<Unit filename="D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.4/GoogleFormProject/ExamWritten.cpp">
+		<Unit filename="D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.5/GoogleFormProject/ExamWritten.cpp">
 			<Option target="GoogleFormProject"/>
 		</Unit>
-		<Unit filename="D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.4/GoogleFormProject/ExamWritten.h">
+		<Unit filename="D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.5/GoogleFormProject/ExamWritten.h">
 			<Option target="GoogleFormProject"/>
 		</Unit>
-		<Unit filename="D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.4/GoogleFormProject/Master.cpp">
+		<Unit filename="D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.5/GoogleFormProject/Master.cpp">
 			<Option target="GoogleFormProject"/>
 		</Unit>
-		<Unit filename="D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.4/GoogleFormProject/Master.h">
+		<Unit filename="D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.5/GoogleFormProject/Master.h">
 			<Option target="GoogleFormProject"/>
 		</Unit>
-		<Unit filename="D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.4/GoogleFormProject/Student.cpp">
+		<Unit filename="D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.5/GoogleFormProject/Student.cpp">
 			<Option target="GoogleFormProject"/>
 		</Unit>
-		<Unit filename="D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.4/GoogleFormProject/Student.h">
+		<Unit filename="D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.5/GoogleFormProject/Student.h">
 			<Option target="GoogleFormProject"/>
 		</Unit>
-		<Unit filename="D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.4/GoogleFormProject/main.cpp">
+		<Unit filename="D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.5/GoogleFormProject/main.cpp">
 			<Option target="GoogleFormProject"/>
 		</Unit>
-		<Unit filename="D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.4/GoogleFormProject/CMakeLists.txt">
+		<Unit filename="D:/Naeem/Daneshgah/TERM2/pishrafte/MiniProject/1.5/GoogleFormProject/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
