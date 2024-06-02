@@ -63,7 +63,7 @@ int main() {
                         cout<<"Returning to the main menu... \n";
                             break;
                         }
-                        else if (*order == 1)
+                        else if (*order == 1)//My active exams...
                         {
 
                         }
