@@ -67,8 +67,49 @@ int main() {
                         {
 
                         }
-                        else if (*order == 2)
+                        else if (*order == 2) //The result of my exams...
                         {
+                            string usernamepart="";
+                            int lastSpace = input.find_last_of(' ');
+                            if (lastSpace!= std::string::npos) {
+                                 usernamepart = input.substr(0, lastSpace);
+                            }
+
+                            fstream examsFile;
+                            vector<string> names;
+                            string line="";
+                            examsFile.open("CorrectedExamsName.txt",ios::in);
+                            while (getline(examsFile,line))
+                            {
+                                if (line.find(usernamepart) != std::string::npos) {
+                                    // رشته را به وکتور اضافه کن
+                                    names.push_back(line);
+                                }
+                            }
+                            examsFile.close();
+                            if (names.empty())
+                            {
+                                cout<<"You have no corrected exams to view :( \n";
+                            }
+                            else
+                            {
+                                cout<<"Which of the following exams do you want to see? \n";
+                                for (int i = 0; i < names.size(); ++i)
+                                {
+                                    cout<<i<<"_ "<<names[i]<<endl;
+                                }
+                                int ans;
+                                cin>>ans;
+                                    fstream tempForSHow;
+                                    string tempSTR="";
+                                    tempForSHow.open("CorrectedExamList/"+names[ans]+".txt");
+                                    while (getline(tempForSHow,tempSTR))
+                                    {
+                                        cout<<tempSTR<<endl;
+                                    }
+                                    tempForSHow.close();
+                                    cout<<"Your desired exam has been completely displayed. \n";
+                            }
 
                         }
                         else if (*order == 3)
