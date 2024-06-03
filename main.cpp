@@ -67,79 +67,92 @@ int main() {
                         }
                         else if (*order == 1)//My active exams...
                         {
-                            vector <string> exams;
-                            vector <string> Vstudents;
+                            vector<string> exams;
+                            vector<string> Vstudents;
                             fstream examnames;
                             fstream studentlist;
                             string innerline = "";
                             string list_of_user = "";
-                            bool Bstudent = false;
 
-                            studentlist.open("StudentsListName.txt", ios :: in);
-                            if (studentlist.is_open()){
+                            // باز کردن فایل لیست دانشجویان
+                            studentlist.open("StudentsListName.txt", ios::in);
+                            if (studentlist.is_open()) {
                                 while (getline(studentlist, innerline)) {
                                     Vstudents.push_back(innerline);
                                 }
                             }
                             studentlist.close();
 
-                            for(int i = 0; i < Vstudents.size(); i++){
+                            // جستجوی نام کاربر در لیست دانشجویان
+                            for (int i = 0; i < Vstudents.size(); i++) {
                                 bool loopflag = false;
-                                string sList = "";
-                                sList = "StudentLists/" + Vstudents[i] + ".txt";
+                                string sList = "StudentLists/" + Vstudents[i] + ".txt";
                                 fstream loopfile;
-                                loopfile.open(sList, ios :: in);
-                                if (loopfile.is_open()){
+                                loopfile.open(sList, ios::in);
+                                if (loopfile.is_open()) {
                                     string loopline = "";
                                     while (getline(loopfile, loopline)) {
                                         if (user == loopline) {
                                             list_of_user = Vstudents[i];
                                             loopflag = true;
-                                            Bstudent = true;
                                             break;
-                                        } else {
-                                            Bstudent = false;
                                         }
                                     }
                                 }
                                 loopfile.close();
-                                if(loopflag){
+                                if (loopflag) {
                                     break;
                                 }
                             }
-                            if(Bstudent){
-                                cout << "You are student of " << list_of_user << endl;
-                            }else{
-                                cout << "Your name does not found in any lists\n";
-                            }
 
-                            /* examnames.open("ExamsName.txt", ios :: in);
+                            // باز کردن فایل نام امتحانات
+                            examnames.open("ExamsName.txt", ios::in);
                             if (!examnames.is_open()) {
                                 cerr << "Error has occurred while opening file!" << endl;
                             }
+
                             string line = "";
-                            while(getline(examnames, line)){
+                            while (getline(examnames, line)) {
                                 exams.push_back(line);
                             }
                             examnames.close();
-                            for(int i = 0; i < exams.size(); i++){
-                                string sname = "";
-                                sname = exams[i] + ".txt";
+
+                            // جستجوی وضعیت امتحانات
+                            for (int i = 0; i < exams.size(); i++) {
+                                string sname = "ExamList/" + exams[i] + ".txt";
                                 fstream file;
-                                file.open(sname, ios :: in);
-                                if (!examnames.is_open()) {
-                                    cerr << "Error has occurred while opening file!" << endl;
+                                file.open(sname, ios::in);
+                                if (file.is_open()) {
+                                    bool isActive = false;
+                                    bool isStudentInExam = false;
+                                    while (getline(file, line)) {
+                                        int pos = line.find("For students of " + list_of_user);
+                                        if (pos != string::npos) {
+                                            int condPos = line.find("Condition: ", pos + 16);
+                                            if (condPos != string::npos) {
+                                                string condition = line.substr(condPos + 11);
+                                                if (condition.find("Active") != string::npos) {
+                                                    isActive = true;
+                                                }
+                                                isStudentInExam = true;
+                                                break;
+                                            }
+                                        }
+                                    }
+                                    file.close();
+
+                                    if (isStudentInExam) {
+                                        if (isActive) {
+                                            cout << "You are a student of " << list_of_user << " and the exam " << exams[i] << " is Active for you.\n";
+                                        } else {
+                                            cout << "You are a student of " << list_of_user << " and the exam " << exams[i] << " is Inactive for you.\n";
+                                        }
+                                    } else {
+                                        cout << "You are a student of " << list_of_user << " and the exam " << exams[i] << " is not listed for you.\n";
+                                    }
                                 }
-                                string line = "";
-                                while(getline(file, line)){
-                                    int pos = line.find("For students of ");
-                                    if (pos != string::npos) {
-                                        int namePos = line.find(listName, pos + 16);
-                                }
-
-
-                            }*/
-
+                            }
+                            cout << endl;
                         }
                         else if (*order == 2) //The result of my exams...
                         {
