@@ -26,6 +26,7 @@ int main() {
 
         //---------------------------------- START student part ----------------------------------
         if (op == 1) {
+            string user = "";
             cout << "Please enter your username and password(Enter 0 to return to the main menu):";
             string input = "";
             getline(cin >> ws, input);
@@ -40,6 +41,7 @@ int main() {
                 string line;
                 while (getline(studentfile, line)) { //search for student
                     if (line == input) {
+                        user = input;
                         log = true;
                         break;
                     } else {
@@ -48,14 +50,14 @@ int main() {
                 }
                 if (log == true)
                 {
+                    cout << "You have successfully logged in as a student\n";
                     while (true) {
                         int *order = new int();
-                        cout << "You have successfully logged in as a student\n \n";
                         cout << "Choose your desired option from the menu below...\n"
                                 " 0. Back to the main menu.\n "
                                 "1. My active exams...\n "
                                 "2. The result of my exams...\n "
-                                "3. The result of my protests...\n"
+                                "3. The result of my protests...\n "
                                 "4. Show ratings...\n";
                         cin >> *order;
                         if (*order == 0)
@@ -65,6 +67,78 @@ int main() {
                         }
                         else if (*order == 1)//My active exams...
                         {
+                            vector <string> exams;
+                            vector <string> Vstudents;
+                            fstream examnames;
+                            fstream studentlist;
+                            string innerline = "";
+                            string list_of_user = "";
+                            bool Bstudent = false;
+
+                            studentlist.open("StudentsListName.txt", ios :: in);
+                            if (studentlist.is_open()){
+                                while (getline(studentlist, innerline)) {
+                                    Vstudents.push_back(innerline);
+                                }
+                            }
+                            studentlist.close();
+
+                            for(int i = 0; i < Vstudents.size(); i++){
+                                bool loopflag = false;
+                                string sList = "";
+                                sList = "StudentLists/" + Vstudents[i] + ".txt";
+                                fstream loopfile;
+                                loopfile.open(sList, ios :: in);
+                                if (loopfile.is_open()){
+                                    string loopline = "";
+                                    while (getline(loopfile, loopline)) {
+                                        if (user == loopline) {
+                                            list_of_user = Vstudents[i];
+                                            loopflag = true;
+                                            Bstudent = true;
+                                            break;
+                                        } else {
+                                            Bstudent = false;
+                                        }
+                                    }
+                                }
+                                loopfile.close();
+                                if(loopflag){
+                                    break;
+                                }
+                            }
+                            if(Bstudent){
+                                cout << "You are student of " << list_of_user << endl;
+                            }else{
+                                cout << "Your name does not found in any lists\n";
+                            }
+
+                            /* examnames.open("ExamsName.txt", ios :: in);
+                            if (!examnames.is_open()) {
+                                cerr << "Error has occurred while opening file!" << endl;
+                            }
+                            string line = "";
+                            while(getline(examnames, line)){
+                                exams.push_back(line);
+                            }
+                            examnames.close();
+                            for(int i = 0; i < exams.size(); i++){
+                                string sname = "";
+                                sname = exams[i] + ".txt";
+                                fstream file;
+                                file.open(sname, ios :: in);
+                                if (!examnames.is_open()) {
+                                    cerr << "Error has occurred while opening file!" << endl;
+                                }
+                                string line = "";
+                                while(getline(file, line)){
+                                    int pos = line.find("For students of ");
+                                    if (pos != string::npos) {
+                                        int namePos = line.find(listName, pos + 16);
+                                }
+
+
+                            }*/
 
                         }
                         else if (*order == 2) //The result of my exams...
