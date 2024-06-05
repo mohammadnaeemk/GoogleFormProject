@@ -1,0 +1,8 @@
+Number of questions : 3
+Time : 2
+Total score : 15
+1) whats your name?
+2) whats your last name?
+3) how old are you?
+
+For students of computer1 Condition: Active

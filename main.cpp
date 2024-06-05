@@ -69,6 +69,7 @@ int main() {
                         {
                             vector<string> exams;
                             vector<string> Vstudents;
+                            vector<string> activExam;
                             fstream examnames;
                             fstream studentlist;
                             string innerline = "";
@@ -144,15 +145,58 @@ int main() {
                                     if (isStudentInExam) {
                                         if (isActive) {
                                             cout << "You are a student of " << list_of_user << " and the exam " << exams[i] << " is Active for you.\n";
+                                            activExam.push_back(exams[i]);
                                         } else {
                                             cout << "You are a student of " << list_of_user << " and the exam " << exams[i] << " is Inactive for you.\n";
                                         }
-                                    } else {
-                                        cout << "You are a student of " << list_of_user << " and the exam " << exams[i] << " is not listed for you.\n";
                                     }
                                 }
                             }
+
                             cout << endl;
+                            if (!activExam.empty())
+                            {
+                                int ans = 0 , TorD=0;
+                                cout<< "Your active exams are listed below. Which of the following exams do you intend to participate in? Enter its number.\n";
+                                for (int i = 1; i <= activExam.size(); ++i) {
+                                    cout << i << "_ " << activExam[i - 1] << ".\n";
+                                }
+                                cout <<"your request: \n";
+                                cin>>ans;
+                                while (true)
+                                {
+                                    if (ans >= 1 && ans <= activExam.size())
+                                    {
+                                        break;
+                                    }
+                                    else
+                                    {
+                                        cout <<"Your request is not available. Please enter the correct number.please enter again : \n";
+                                        cin>>ans;
+                                    }
+                                }
+                                cout<<"The exam you want to take is a test(1) or descriptive(2)? \n";
+                                cin>>TorD;
+                                if (TorD==1)
+                                {
+
+                                }
+                                else if (TorD==2)
+                                {
+                                    ExamWritten::takeDescriptiveExam(activExam[ans-1],Master::StudentReturner(user));
+                                }
+                                else
+                                {
+                                    cout<<"your ans is not available!! \n";
+                                    continue;
+                                }
+
+
+                            }
+                            else
+                            {
+                                cout<<"You do not have any active exams to participate in!! \n";
+                            }
                         }
                         else if (*order == 2) //The result of my exams...
                         {
@@ -199,11 +243,11 @@ int main() {
                             }
 
                         }
-                        else if (*order == 3)
+                        else if (*order == 3)//The result of my protests...
                         {
 
                         }
-                        else if (*order == 4)
+                        else if (*order == 4)//Show ratings...
                         {
 
                         }
@@ -802,14 +846,13 @@ int main() {
                         }
                         else if (ans == 10)//Creating rating
                         {
-                            while (true)
-                            {
-                                cout << "Please select the name of the exam you want to correct from the list below and enter it.(enter 'exit' to back to the master menu):\n \n";
-
-                            }
+//                            while (true)
+//                            {
+//                                cout << "Please select the name of the exam you want to correct from the list below and enter it.(enter 'exit' to back to the master menu):\n \n";
+//
+//                            }
                         }
                         else
-
                         {
                             cout << "Unknown request!\n";//goes to master menu
                             continue;

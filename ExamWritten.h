@@ -12,5 +12,6 @@ public:
 
 //for build Exam Written
     bool ExamWrittenCreator();
+    static void  takeDescriptiveExam(string examName, string userName);
 };
 #endif
